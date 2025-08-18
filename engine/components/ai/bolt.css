@@ -1,0 +1,357 @@
+/* Bolt UI Component */
+.bolt-container {
+  background: #0f0f0f;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Bolt Header */
+.bolt-header {
+  background: #0f0f0f;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bolt-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bolt-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bolt-logo-icon {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #f97316, #f59e0b);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bolt-logo-icon svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.bolt-logo-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bolt-project-name {
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #f97316;
+  font-weight: 500;
+}
+
+/* Bolt Chat Area */
+.bolt-chat-area {
+  height: 400px;
+  overflow-y: auto;
+  padding: 24px 0;
+  background: #0f0f0f;
+  scrollbar-width: thin;
+  scrollbar-color: #1f1f1f #0f0f0f;
+}
+
+.bolt-chat-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bolt-chat-area::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+.bolt-chat-area::-webkit-scrollbar-thumb {
+  background: #1f1f1f;
+  border-radius: 4px;
+}
+
+.bolt-chat-area::-webkit-scrollbar-thumb:hover {
+  background: #2f2f2f;
+}
+
+/* Message Blocks */
+.bolt-message {
+  padding: 20px 0;
+}
+
+.bolt-message-content {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bolt-message.user .bolt-text {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 4px;
+}
+
+.bolt-text {
+  color: #e5e5e5;
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Bolt Action Cards */
+.bolt-action-card {
+  background: rgba(249, 115, 22, 0.05);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.bolt-action-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.bolt-action-icon {
+  width: 20px;
+  height: 20px;
+  color: #f97316;
+}
+
+.bolt-action-title {
+  color: #f97316;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bolt-action-content {
+  color: #a3a3a3;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-left: 32px;
+}
+
+/* Bolt Code Editor Preview */
+.bolt-editor-preview {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+.bolt-editor-header {
+  background: #0f0f0f;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bolt-editor-filename {
+  color: #a3a3a3;
+  font-size: 13px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.bolt-editor-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.bolt-editor-button {
+  background: transparent;
+  border: none;
+  color: #666;
+  padding: 4px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.bolt-editor-button:hover {
+  color: #f97316;
+}
+
+.bolt-editor-content {
+  padding: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Input Area */
+.bolt-input-area {
+  background: #0f0f0f;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bolt-input-wrapper {
+  max-width: 740px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bolt-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px 50px 14px 16px;
+  color: #e5e5e5;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: none;
+  min-height: 56px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.bolt-input:focus {
+  outline: none;
+  border-color: rgba(249, 115, 22, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.bolt-input::placeholder {
+  color: #666;
+}
+
+.bolt-send-button {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: linear-gradient(135deg, #f97316, #f59e0b);
+  border: none;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bolt-send-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+.bolt-send-button.disabled {
+  background: #1f1f1f;
+  cursor: not-allowed;
+  transform: scale(1);
+  box-shadow: none;
+}
+
+.bolt-send-icon {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+/* Code blocks in Bolt */
+.bolt-text pre {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  overflow-x: auto;
+}
+
+.bolt-text code {
+  background: rgba(249, 115, 22, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  color: #f97316;
+}
+
+.bolt-text pre code {
+  background: none;
+  padding: 0;
+  color: #e5e5e5;
+}
+
+/* Bolt Progress Indicator */
+.bolt-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.bolt-progress-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bolt-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f97316, #f59e0b);
+  border-radius: 2px;
+  animation: bolt-progress 2s ease-in-out infinite;
+}
+
+@keyframes bolt-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.bolt-progress-text {
+  color: #666;
+  font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bolt-container {
+    margin: 10px;
+  }
+  
+  .bolt-message-content {
+    padding: 0 16px;
+  }
+  
+  .bolt-text {
+    font-size: 14px;
+  }
+}

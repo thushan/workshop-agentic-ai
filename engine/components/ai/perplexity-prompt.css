@@ -1,0 +1,223 @@
+/* Perplexity Prompt UI Component */
+.perplexity-prompt-container {
+  background: #202222;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+/* Reset inherited styles */
+.perplexity-prompt-container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* Header */
+.perplexity-prompt-header {
+  text-align: center;
+  padding: 50px 20px 40px;
+  flex: 1;
+}
+
+.perplexity-prompt-title {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-transform: none !important;
+  letter-spacing: -0.5px !important;
+}
+
+/* Input Area */
+.perplexity-prompt-input-wrapper {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.perplexity-prompt-input-container {
+  width: 100%;
+  background: #2a2b2b;
+  border-radius: 24px;
+  border: 1px solid #3a3b3b;
+  display: flex;
+  align-items: center;
+  padding: 4px 4px 4px 20px;
+  transition: all 0.2s;
+  position: relative;
+  height: 52px;
+}
+
+.perplexity-prompt-input-container:focus-within {
+  border-color: #4a4b4b;
+  box-shadow: 0 0 0 1px rgba(74, 75, 75, 0.2);
+}
+
+/* Input group */
+.perplexity-prompt-input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+/* Textarea */
+.perplexity-prompt-textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  text-align: left !important;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.perplexity-prompt-textarea::placeholder {
+  color: #6a6b6b;
+  opacity: 1;
+}
+
+/* Action buttons */
+.perplexity-prompt-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  padding-right: 4px;
+}
+
+.perplexity-prompt-action {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+  color: #8a8b8b;
+}
+
+.perplexity-prompt-action:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.perplexity-prompt-action svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Submit button */
+.perplexity-prompt-submit {
+  background: #20b8cd;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.perplexity-prompt-submit:hover {
+  background: #1ca0b8;
+  transform: scale(1.05);
+}
+
+.perplexity-prompt-submit svg {
+  width: 20px;
+  height: 20px;
+  color: #202222;
+}
+
+/* Quick actions */
+.perplexity-prompt-quick-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.perplexity-prompt-quick-action {
+  background: transparent;
+  border: 1px solid #3a3b3b;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #b0b1b1 !important;
+  font-size: 14px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+.perplexity-prompt-quick-action:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #4a4b4b;
+  color: #ffffff !important;
+}
+
+.perplexity-prompt-quick-action svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Quick action icons */
+.perplexity-prompt-quick-action .icon-emoji {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .perplexity-prompt-container {
+    margin: 10px;
+    height: 300px;
+  }
+  
+  .perplexity-prompt-header {
+    padding: 40px 20px 30px;
+  }
+  
+  .perplexity-prompt-title {
+    font-size: 26px !important;
+  }
+  
+  .perplexity-prompt-input-wrapper {
+    padding: 0 15px 15px;
+  }
+  
+  .perplexity-prompt-quick-actions {
+    display: none;
+  }
+}

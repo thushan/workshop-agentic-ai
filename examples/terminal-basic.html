@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Terminal Component Examples</title>
+	
+	<link rel="stylesheet" href="../engine/reset.css">
+	<link rel="stylesheet" href="../engine/reveal.css">
+	<link rel="stylesheet" href="../engine/theme/modern-dark.css">
+	<link rel="stylesheet" href="../engine/modern.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Basic Terminal Example -->
+			<section>
+				<h3>Terminal Component Examples</h3>
+				<p>macOS-style terminal with Warp-inspired command blocks</p>
+				
+				<div class="terminal-window">
+					<div class="terminal-header">
+						<span class="terminal-button close"></span>
+						<span class="terminal-button minimize"></span>
+						<span class="terminal-button maximize"></span>
+						<span class="terminal-title">Terminal - zsh</span>
+					</div>
+					<div class="terminal-content">
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">npm install @anthropic/claude-sdk</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">added 42 packages, and audited 1337 packages in 12s
+
+found 0 vulnerabilities</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">npm run dev</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">
+> presentation@1.0.0 dev
+> vite
+
+  VITE v5.0.0  ready in 243 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.1.100:5173/
+  ➜  press h + enter to show help</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- VSCode Terminal Example -->
+			<section>
+				<h3>VSCode Integrated Terminal</h3>
+				<p>Multiple tabs for different terminal sessions</p>
+				
+				<div class="vscode-terminal">
+					<div class="vscode-tabs">
+						<div class="vscode-tab active" data-tab="terminal">TERMINAL</div>
+						<div class="vscode-tab" data-tab="output">OUTPUT</div>
+						<div class="vscode-tab" data-tab="problems">PROBLEMS</div>
+					</div>
+					<div class="vscode-terminal-content">
+						<div id="terminal-content" class="tab-content">
+							<div class="terminal-block">
+								<span class="prompt">thushan@macbook</span>
+								<span class="path">~/projects/presentation</span>
+								<span class="command">git status</span>
+							</div>
+							<div class="terminal-block">
+								<span class="cmd-output">On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+	modified:   index.html
+	modified:   engine/modern.css
+
+no changes added to commit (use "git add" and/or "git commit -a")</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Command Examples -->
+			<section>
+				<h3>Common Development Commands</h3>
+				
+				<div class="terminal-window">
+					<div class="terminal-header">
+						<span class="terminal-button close"></span>
+						<span class="terminal-button minimize"></span>
+						<span class="terminal-button maximize"></span>
+						<span class="terminal-title">Development Workflow</span>
+					</div>
+					<div class="terminal-content">
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">docker compose up -d</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">✔ Container postgres    Started    0.8s 
+✔ Container redis       Started    0.6s 
+✔ Container api-server  Started    1.2s</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">npm test -- --coverage</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">PASS  src/auth.test.js
+PASS  src/api.test.js
+PASS  src/utils.test.js
+
+Test Suites: 3 passed, 3 total
+Tests:       42 passed, 42 total
+Coverage:    87.3% statements</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Error Example -->
+			<section>
+				<h3>Error Output Example</h3>
+				
+				<div class="terminal-window terminal-tall">
+					<div class="terminal-header">
+						<span class="terminal-button close"></span>
+						<span class="terminal-button minimize"></span>
+						<span class="terminal-button maximize"></span>
+						<span class="terminal-title">Build Error</span>
+					</div>
+					<div class="terminal-content">
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">npm run build</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-error">ERROR in ./src/components/Dashboard.tsx
+Module build failed: SyntaxError: Unexpected token (42:15)
+
+  40 |   return (
+  41 |     &lt;div className="dashboard"&gt;
+> 42 |       &lt;Header 
+     |               ^
+  43 |         title={title}
+  44 |         user={currentUser}
+  45 |       /&gt;
+
+ @ ./src/App.tsx 4:0-42
+ @ ./src/index.tsx</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">npm run lint:fix</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">✨ Fixed 12 problems in 8 files</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Multi-command Example -->
+			<section>
+				<h3>Deployment Pipeline</h3>
+				
+				<div class="terminal-window">
+					<div class="terminal-header">
+						<span class="terminal-button close"></span>
+						<span class="terminal-button minimize"></span>
+						<span class="terminal-button maximize"></span>
+						<span class="terminal-title">CI/CD Pipeline</span>
+					</div>
+					<div class="terminal-content">
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">git push origin main</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.24 KiB | 1.24 MiB/s, done.
+   a1b2c3d..e4f5g6h  main -> main</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">vercel --prod</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">🔍 Inspect: https://vercel.com/thushan/project/abc123
+✅ Production: https://project.vercel.app [12s]</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-prompt">$</span>
+							<span class="cmd-command">curl -I https://project.vercel.app</span>
+						</div>
+						<div class="terminal-block">
+							<span class="cmd-output">HTTP/2 200 
+content-type: text/html; charset=utf-8
+cache-control: public, max-age=0, must-revalidate
+x-vercel-cache: HIT</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="../engine/reveal.js"></script>
+	<script src="../engine/plugin/highlight/highlight.js"></script>
+	<script src="../engine/modern-enhancements.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [ RevealHighlight ]
+		});
+		
+		// Initialize VSCode tabs if using them
+		Reveal.on('ready', () => {
+			initVSCodeTabs();
+		});
+	</script>
+</body>
+</html>

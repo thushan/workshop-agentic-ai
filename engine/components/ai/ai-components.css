@@ -1,0 +1,94 @@
+/* Main AI Components CSS - Import all AI UI components */
+
+/* Import individual AI component styles */
+@import url('chatgpt.css');
+@import url('claude.css');
+@import url('v0.css');
+@import url('bolt.css');
+
+/* Common AI Component Styles */
+.ai-slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.ai-slide-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ai-slide-title h3 {
+  margin: 0;
+}
+
+/* Make AI containers responsive within slides */
+.reveal .slides section .chatgpt-container,
+.reveal .slides section .claude-container,
+.reveal .slides section .v0-container,
+.reveal .slides section .bolt-container {
+  margin: 10px auto;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adjust chat areas for slide context */
+.reveal .slides section .chatgpt-chat-area,
+.reveal .slides section .claude-chat-area,
+.reveal .slides section .v0-chat-area,
+.reveal .slides section .bolt-chat-area {
+  flex: 1;
+  min-height: 300px;
+  max-height: 50vh;
+}
+
+/* Icon SVG definitions for reuse */
+.ai-icons {
+  display: none;
+}
+
+/* Responsive adjustments for presentations */
+@media (max-width: 1024px) {
+  .reveal .slides section .chatgpt-container,
+  .reveal .slides section .claude-container,
+  .reveal .slides section .v0-container,
+  .reveal .slides section .bolt-container {
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .reveal .slides section .chatgpt-text,
+  .reveal .slides section .claude-text,
+  .reveal .slides section .v0-text,
+  .reveal .slides section .bolt-text {
+    font-size: 14px;
+  }
+}
+
+/* Full-screen mode adjustments */
+.reveal.fullscreen .chatgpt-container,
+.reveal.fullscreen .claude-container,
+.reveal.fullscreen .v0-container,
+.reveal.fullscreen .bolt-container {
+  max-width: 1200px;
+}
+
+/* Print styles */
+@media print {
+  .chatgpt-chat-area,
+  .claude-chat-area,
+  .v0-chat-area,
+  .bolt-chat-area {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  .chatgpt-input-area,
+  .claude-input-area,
+  .v0-input-area,
+  .bolt-input-area {
+    display: none;
+  }
+}

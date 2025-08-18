@@ -1,0 +1,309 @@
+/* Terminal Component - Reusable terminal UI styles */
+
+/* Modern Terminal Window (macOS style) */
+.terminal-window {
+    background: #0a0a0a;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 100%;
+    position: relative;
+    border: 1px solid #1a1a1a;
+    text-align: left;
+}
+
+.terminal-header {
+    background: #3D3D3A;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.terminal-button {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.terminal-button.close { background: #ff5f56; }
+.terminal-button.minimize { background: #ffbd2e; }
+.terminal-button.maximize { background: #27c93f; }
+
+.terminal-title {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    color: #d3c9c9;
+    font-family: var(--font-family-mono);
+}
+
+.terminal-content {
+    padding: 12px 0;
+    font-family: var(--font-family-mono);
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e8e8e8;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.terminal-content pre {
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: inherit;
+    width: 100%;
+}
+
+/* Warp-style Command Blocks */
+.terminal-block {
+    position: relative;
+    padding: 10px 20px;
+    margin: 4px 8px;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.terminal-block:hover {
+    background: rgba(58, 150, 255, 0.08);
+    border-color: rgba(58, 150, 255, 0.3);
+}
+
+.terminal-block .cmd-prompt {
+    color: #22c55e;
+    font-weight: 600;
+    user-select: none;
+}
+
+.terminal-block .cmd-command {
+    color: #e8e8e8;
+}
+
+.terminal-block .cmd-output {
+    color: #a0a0a0;
+    display: block;
+    padding-left: 20px;
+    margin-top: 4px;
+}
+
+.terminal-block .copy-cmd {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all var(--transition-fast);
+    background: linear-gradient(135deg, #2a2a2a, #333);
+    border: 1px solid rgba(207, 125, 91, 0.3);
+    color: #a0a0a0;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-family-base);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminal-block:hover .copy-cmd {
+    opacity: 1;
+}
+
+.terminal-block .copy-cmd:hover {
+    background: linear-gradient(135deg, rgba(207, 125, 91, 0.2), rgba(163, 113, 247, 0.2));
+    color: #fff;
+    border-color: #CF7D5B;
+    box-shadow: 0 2px 8px rgba(207, 125, 91, 0.3);
+}
+
+.terminal-block .copy-cmd.copied {
+    background: var(--accent-green);
+    color: white;
+    border-color: var(--accent-green);
+}
+
+/* Copy animation */
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.terminal-block.copying {
+    position: relative;
+    overflow: hidden;
+}
+
+.terminal-block.copying::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 10px;
+    padding: 3px;
+    background: linear-gradient(
+        120deg,
+        #CF7D5B,
+        #a371f7,
+        #58a6ff,
+        #79c0ff,
+        #3fb950,
+        #f5a623,
+        #CF7D5B,
+        #ff7eb6,
+        #a371f7,
+        #CF7D5B
+    );
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: gradient-flow 1.2s ease-in-out;
+    opacity: 0.9;
+}
+
+/* VSCode Terminal Style */
+.vscode-terminal {
+    background: #1e1e1e;
+    border-radius: 8px;
+    font-family: var(--font-family-mono);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #2a2a2a;
+    text-align: left;
+}
+
+.vscode-tabs {
+    background: #252526;
+    display: flex;
+    border-bottom: 1px solid #3e3e42;
+}
+
+.vscode-tab {
+    padding: 8px 20px;
+    color: #969696;
+    font-size: 12px;
+    border-right: 1px solid #3e3e42;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.vscode-tab.active {
+    background: #1e1e1e;
+    color: #cccccc;
+    border-bottom: 2px solid #007acc;
+}
+
+.vscode-terminal-content {
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-y: auto;
+    max-height: none;
+    min-height: 100px;
+}
+
+.vscode-terminal-content .terminal-block {
+    padding: 8px 20px;
+    margin: 4px 8px;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.vscode-terminal-content .terminal-block:hover {
+    background: rgba(0, 122, 204, 0.08);
+    border-color: rgba(0, 122, 204, 0.3);
+}
+
+.vscode-terminal-content .prompt {
+    color: #569cd6;
+    font-weight: 600;
+    user-select: none;
+}
+
+.vscode-terminal-content .path {
+    color: #ce9178;
+}
+
+.vscode-terminal-content .command {
+    color: #d4d4d4;
+}
+
+/* Command Types */
+.cmd-prompt {
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.cmd-command {
+    color: #f0f0f0;
+}
+
+.cmd-output {
+    color: #b7b7b7;
+}
+
+.cmd-error {
+    color: var(--accent-red);
+}
+
+/* Tall scrollable terminal */
+.terminal-window.terminal-tall .terminal-content {
+    min-height: 500px;
+    max-height: none;
+}
+
+.terminal-tall-scroll .vscode-terminal-content {
+    height: calc(100vh - 280px);
+    max-height: none;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3e3e42 #1e1e1e;
+}
+
+.terminal-tall-scroll .vscode-terminal-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.terminal-tall-scroll .vscode-terminal-content::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 5px;
+}
+
+.terminal-tall-scroll .vscode-terminal-content::-webkit-scrollbar-thumb {
+    background: #3e3e42;
+    border-radius: 5px;
+}
+
+.terminal-tall-scroll .vscode-terminal-content::-webkit-scrollbar-thumb:hover {
+    background: #4e4e52;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .terminal-window,
+    .vscode-terminal {
+        font-size: 14px;
+    }
+    
+    .terminal-content,
+    .vscode-terminal-content {
+        font-size: 13px;
+    }
+}

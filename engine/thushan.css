@@ -1,0 +1,71 @@
+.highlight-1,
+.highlight-yellow {
+    color: rgb(255, 170, 0);
+}
+.highlight-2,
+.highlight-blue {
+    color: rgb(0, 170, 255);
+}
+.highlight-3,
+.highlight-purple {
+    color: rgb(128, 85, 196);
+}
+.highlight-4,
+.highlight-pink {
+    color: rgb(255, 0, 136);
+}
+.highlight-5,
+.highlight-orange {
+    color: rgb(249, 145, 87);
+}
+.highlight-6,
+.highlight-green {
+    color: #2fd15a;
+}
+.font-xlarge {
+    font-size: x-large
+}
+.table-data-align-center tbody tr td {
+    text-align: center;
+}
+.console-commands {
+    white-space: pre-line;
+}
+
+a.learn-more {
+    color: rgb(170, 255, 0);
+}
+a.learn-more:hover {
+    color: rgb(170, 255, 0);
+    border-bottom: dotted 1px rgb(170, 255, 0);
+}
+a.learn-code {
+    font-family: 'Courier New', Courier, monospace;
+}
+.console-window {
+    background: #212020;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0,0,255,0.1);
+    -moz-box-shadow: 0 0 5px rgba(255,255,255,0.1);
+    -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.1);
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.1);
+}
+.console-window pre {
+    background: #212020;
+    box-shadow: unset;
+    font-size: xx-large;
+    color: #c5c8c6;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+}
+
+.reveal .resources li {
+    list-style-type: '👉';
+    padding-inline-start: 1ch;
+}
+.reveal .mind-blown::before {
+    content: "🤯";
+}
+.reveal .star::before {
+    content: "⭐";
+}

@@ -1,0 +1,337 @@
+:root {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --bg-accent: #30363d;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --text-accent: #58a6ff;
+  --text-highlight: #79c0ff;
+  --text-code: #e6edf3;
+  --accent-purple: #a371f7;
+  --accent-green: #3fb950;
+  --accent-orange: #f0883e;
+  --accent-red: #f85149;
+  --accent-yellow: #f5a623;
+  --border-color: #30363d;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.5);
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  --font-family-mono: 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace;
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+}
+
+.reveal-viewport {
+  background: var(--bg-primary);
+  background-image: radial-gradient(circle at 20% 80%, var(--bg-secondary) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, var(--bg-tertiary) 0%, transparent 50%);
+}
+
+.reveal {
+  font-family: var(--font-family-base);
+  font-size: 42px;
+  font-weight: normal;
+  color: var(--text-primary);
+}
+
+.reveal ::selection {
+  color: var(--bg-primary);
+  background: var(--text-highlight);
+  text-shadow: none;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: var(--text-primary);
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+.reveal h1 { font-size: 2.5em; }
+.reveal h2 { font-size: 1.6em; }
+.reveal h3 { font-size: 1.3em; }
+.reveal h4 { font-size: 1em; }
+
+.reveal h1 {
+  text-shadow: none;
+}
+
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul {
+  list-style-type: square;
+}
+
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 40px;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--text-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--font-family-mono);
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: var(--shadow-md);
+}
+
+.reveal code {
+  font-family: var(--font-family-mono);
+  text-transform: none;
+  background: var(--bg-secondary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--text-code);
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+  background: var(--bg-tertiary);
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+.reveal a {
+  color: var(--text-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.reveal a:hover {
+  color: var(--text-highlight);
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: var(--text-accent);
+}
+
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid var(--text-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal section img.boring {
+  border: 0;
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.reveal section img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.reveal a img {
+  transition: all var(--transition-fast) linear;
+}
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--text-accent);
+  box-shadow: var(--shadow-lg);
+}
+
+.reveal .controls {
+  color: var(--text-accent);
+}
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text-accent);
+}
+
+@media print {
+  .backgrounds {
+    background-color: var(--bg-primary);
+  }
+}
+
+.reveal[data-background-transition=zoom] > .backgrounds .slide-background.past,
+.reveal > .backgrounds .slide-background.past[data-background-transition=zoom] {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.reveal[data-background-transition=zoom] > .backgrounds .slide-background.future,
+.reveal > .backgrounds .slide-background.future[data-background-transition=zoom] {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.reveal[data-background-transition=zoom] > .backgrounds .slide-background,
+.reveal > .backgrounds .slide-background[data-background-transition=zoom] {
+  transition: all 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal .slide-number {
+  color: var(--text-secondary);
+  background-color: transparent;
+}
+
+.reveal .speaker-notes {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}

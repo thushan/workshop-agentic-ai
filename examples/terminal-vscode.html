@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VS Code Terminal Example</title>
+    <link rel="stylesheet" href="../engine/reveal.css">
+    <link rel="stylesheet" href="../engine/theme/modern-dark.css">
+    <link rel="stylesheet" href="../engine/plugin/highlight/github-dark.css">
+    <link rel="stylesheet" href="../engine/modern.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>VS Code Terminal Component</h2>
+                <p>Integrated terminal with tabs and proper styling</p>
+                
+                <div class="vscode-terminal">
+                    <div class="vscode-tabs">
+                        <div class="vscode-tab active" data-tab="terminal">TERMINAL</div>
+                        <div class="vscode-tab" data-tab="output">OUTPUT</div>
+                        <div class="vscode-tab" data-tab="problems">PROBLEMS</div>
+                        <div class="vscode-tab" data-tab="debug">DEBUG CONSOLE</div>
+                    </div>
+                    <div class="vscode-terminal-content">
+                        <div id="terminal-content" class="tab-content active">
+                            <div class="terminal-block">
+                                <span class="prompt">thushan@macbook</span>
+                                <span class="path">~/projects/talk-template</span>
+                                <span class="command">npm run dev</span>
+                            </div>
+                            <div class="terminal-block">
+                                <span class="cmd-output">
+> talk-template@1.0.0 dev
+> vite
+
+  VITE v5.0.0  ready in 243 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.1.100:5173/
+  ➜  press h + enter to show help
+                                </span>
+                            </div>
+                            <div class="terminal-block">
+                                <span class="prompt">thushan@macbook</span>
+                                <span class="path">~/projects/talk-template</span>
+                                <span class="command">git log --oneline -5</span>
+                            </div>
+                            <div class="terminal-block">
+                                <span class="cmd-output">a1b2c3d feat: add AI prompt components
+e4f5g6h refactor: move terminal to reusable component
+h7i8j9k feat: add SixPivot theme
+k0l1m2n feat: modernize template with enhancements
+n3o4p5q Initial commit</span>
+                            </div>
+                        </div>
+                        <div id="output-content" class="tab-content">
+                            <div class="terminal-block">
+                                <span class="cmd-output">[Extension Host] Starting language server...
+[Extension Host] Language server started successfully
+[Extension Host] Activating extension 'ms-vscode.typescript'...
+[Extension Host] Extension 'ms-vscode.typescript' activated successfully</span>
+                            </div>
+                        </div>
+                        <div id="problems-content" class="tab-content">
+                            <div class="terminal-block">
+                                <span class="cmd-output">No problems have been detected in the workspace.</span>
+                            </div>
+                        </div>
+                        <div id="debug-content" class="tab-content">
+                            <div class="terminal-block">
+                                <span class="cmd-output">Debug console is empty.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    // Simple tab switching for demo
+                    document.querySelectorAll('.vscode-tab').forEach(tab => {
+                        tab.addEventListener('click', () => {
+                            // Remove active from all tabs and contents
+                            document.querySelectorAll('.vscode-tab').forEach(t => t.classList.remove('active'));
+                            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                            
+                            // Add active to clicked tab
+                            tab.classList.add('active');
+                            
+                            // Show corresponding content
+                            const tabName = tab.dataset.tab;
+                            const content = document.getElementById(tabName + '-content');
+                            if (content) {
+                                content.classList.add('active');
+                            }
+                        });
+                    });
+                </script>
+            </section>
+        </div>
+    </div>
+    
+    <script src="../engine/reveal.js"></script>
+    <script src="../engine/plugin/highlight/highlight.js"></script>
+    <script src="../engine/modern-enhancements.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealHighlight ]
+        });
+    </script>
+</body>
+</html>

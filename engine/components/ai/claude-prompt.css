@@ -1,0 +1,240 @@
+/* Claude Prompt UI Component */
+.claude-prompt-container {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+/* Reset inherited styles */
+.claude-prompt-container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* Header */
+.claude-prompt-header {
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+.claude-prompt-title {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  color: #d4d4d4 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-transform: none !important;
+  letter-spacing: -0.5px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.claude-prompt-star {
+  color: #eb8c5a;
+  font-size: 24px;
+  display: inline-block;
+}
+
+/* Input Area */
+.claude-prompt-input-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px;
+  gap: 20px;
+}
+
+.claude-prompt-input-container {
+  width: 100%;
+  background: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #3a3a3a;
+  padding: 12px;
+  transition: all 0.2s;
+}
+
+.claude-prompt-input-container:focus-within {
+  border-color: #4a4a4a;
+}
+
+/* Input header */
+.claude-prompt-input-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.claude-prompt-input-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.claude-prompt-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.2s;
+  color: #888;
+}
+
+.claude-prompt-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #aaa;
+}
+
+.claude-prompt-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Model selector */
+.claude-prompt-model {
+  background: transparent;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #d4d4d4 !important;
+  font-size: 13px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.claude-prompt-model:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #4a4a4a;
+}
+
+/* Textarea */
+.claude-prompt-textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #d4d4d4 !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  text-align: left !important;
+  min-height: 40px;
+  max-height: 100px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a3a transparent;
+}
+
+.claude-prompt-textarea::placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+/* Quick actions */
+.claude-prompt-quick-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.claude-prompt-quick-action {
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #d4d4d4 !important;
+  font-size: 14px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+.claude-prompt-quick-action:hover {
+  background: #333;
+  border-color: #4a4a4a;
+}
+
+.claude-prompt-quick-action svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Send button */
+.claude-prompt-send {
+  background: #eb8c5a;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.claude-prompt-send:hover {
+  background: #e17a45;
+  transform: scale(1.05);
+}
+
+.claude-prompt-send svg {
+  width: 16px;
+  height: 16px;
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .claude-prompt-container {
+    margin: 10px;
+    height: 300px;
+  }
+  
+  .claude-prompt-header {
+    padding: 30px 20px 20px;
+  }
+  
+  .claude-prompt-title {
+    font-size: 24px !important;
+  }
+  
+  .claude-prompt-input-wrapper {
+    padding: 0 15px 15px;
+  }
+  
+  .claude-prompt-quick-actions {
+    display: none;
+  }
+}

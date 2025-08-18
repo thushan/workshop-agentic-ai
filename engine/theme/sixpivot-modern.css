@@ -1,0 +1,448 @@
+/**
+ * SixPivot Modern Dark Theme for reveal.js
+ * Combines SixPivot green branding with modern styling
+ * Based on modern-dark.css with SixPivot colors
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* SixPivot Brand Colors */
+  --sixpivot-green: #61a462;
+  --sixpivot-green-light: #73b17a;
+  --sixpivot-green-lighter: #90bf96;
+  --sixpivot-green-dark: #4e8950;
+  --sixpivot-green-darker: #3f6d40;
+  
+  /* Dark theme base colors */
+  --bg-primary: #0e1114;
+  --bg-secondary: #151a1f;
+  --bg-tertiary: #1b232a;
+  --bg-accent: #2a3641;
+  
+  /* Text colors */
+  --text-primary: #e6edf3;
+  --text-secondary: #a9b6c3;
+  --text-accent: var(--sixpivot-green-light);
+  --text-highlight: var(--sixpivot-green-lighter);
+  --text-code: #e6edf3;
+  
+  /* Accent colors */
+  --accent-purple: #a371f7;
+  --accent-green: var(--sixpivot-green);
+  --accent-orange: #f0883e;
+  --accent-red: #f85149;
+  --accent-yellow: #f5a623;
+  --accent-blue: #1b8beb;
+  --accent-cyan: #00aed8;
+  
+  /* UI elements */
+  --border-color: #2a3641;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.5);
+  
+  /* Typography */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+}
+
+/* Viewport background with subtle gradient */
+.reveal-viewport {
+  background: var(--bg-primary);
+  background-image: radial-gradient(circle at 20% 80%, var(--bg-secondary) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, var(--bg-tertiary) 0%, transparent 50%);
+}
+
+/* Base reveal styles */
+.reveal {
+  font-family: var(--font-family-base);
+  font-size: 42px;
+  font-weight: normal;
+  color: var(--text-primary);
+}
+
+.reveal ::selection {
+  color: var(--bg-primary);
+  background: var(--text-highlight);
+  text-shadow: none;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/* Headers with SixPivot green */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: var(--accent-green);
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+.reveal h1 {
+  font-size: 2.5em;
+  background: linear-gradient(135deg, var(--sixpivot-green) 0%, var(--sixpivot-green-light) 50%, var(--sixpivot-green-lighter) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.reveal h2 { font-size: 1.6em; }
+.reveal h3 { font-size: 1.3em; }
+.reveal h4 { font-size: 1em; }
+
+/* Text styles */
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.reveal em {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+/* Links with SixPivot green */
+.reveal a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border-bottom: 1px solid transparent;
+}
+
+.reveal a:hover {
+  color: var(--sixpivot-green-lighter);
+  border-bottom-color: var(--sixpivot-green-lighter);
+}
+
+/* Lists */
+.reveal ol,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+/* Code blocks with SixPivot styling */
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--font-family-mono);
+  line-height: 1.2em;
+  word-wrap: break-word;
+  background: #0b0f12;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: var(--shadow-md);
+}
+
+.reveal code {
+  font-family: var(--font-family-mono);
+  text-transform: none;
+  tab-size: 2;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 12px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  color: var(--text-code);
+}
+
+/* Inline code */
+.reveal :not(pre) > code {
+  background: var(--bg-tertiary);
+  color: var(--sixpivot-green-lighter);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  border: 1px solid var(--border-color);
+}
+
+/* Blockquotes */
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 12px 14px;
+  font-style: italic;
+  background: color-mix(in oklab, var(--bg-tertiary), white 2%);
+  border-left: 4px solid var(--sixpivot-green);
+  box-shadow: var(--shadow-sm);
+  border-radius: 4px;
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+/* Tables */
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: 600;
+  color: var(--accent-green);
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Images and media */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.reveal img {
+  margin: 20px 0;
+}
+
+/* Progress bar with SixPivot green */
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--accent-green);
+}
+
+/* Control arrows with SixPivot green */
+.reveal .controls {
+  color: var(--accent-green);
+}
+
+/* Slide backgrounds */
+.reveal .slide-background {
+  background-color: var(--bg-primary);
+}
+
+/* Speaker notes */
+.reveal .speaker-notes {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+/* Fragments */
+.reveal .slides section .fragment {
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.reveal .slides section .fragment.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.reveal .slides section .fragment.current-fragment {
+  color: var(--sixpivot-green-lighter);
+  text-shadow: 0 0 20px rgba(97, 164, 98, 0.4);
+}
+
+/* SixPivot specific header styles */
+.sixpivot-header {
+  background: linear-gradient(135deg, rgba(97, 164, 98, 0.1), rgba(78, 137, 80, 0.15));
+  border: 2px solid var(--sixpivot-green);
+  border-radius: 6px;
+  padding: 0px 20px;
+  margin: 20px auto 60px;
+  max-width: fit-content;
+  box-shadow: 0 2px 8px rgba(97, 164, 98, 0.2);
+  display: inline-block;
+}
+
+.sixpivot-header-mini {
+  background: linear-gradient(135deg, rgba(97, 164, 98, 0.1), rgba(78, 137, 80, 0.15));
+  border: 2px solid var(--sixpivot-green);
+  border-radius: 6px;
+  padding: 0px 20px;
+  margin: 10px auto 20px;
+  max-width: fit-content;
+  box-shadow: 0 2px 8px rgba(97, 164, 98, 0.2);
+  display: inline-block;
+}
+
+.sixpivot-header-mini p {
+  margin: 10px 0;
+}
+
+.sixpivot-brand {
+  color: var(--sixpivot-green);
+}
+
+.sixpivot-header-title {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-family: var(--font-family-mono);
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.sixpivot-header-title-mini {
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: var(--font-family-mono);
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Highlight classes with SixPivot colors */
+.highlight-green {
+  color: var(--sixpivot-green);
+  font-weight: 600;
+}
+
+.highlight-light-green {
+  color: var(--sixpivot-green-light);
+  font-weight: 600;
+}
+
+.highlight-blue {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.highlight-cyan {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+/* Override for light background sections */
+section.has-light-background,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3,
+section.has-light-background h4,
+section.has-light-background h5,
+section.has-light-background h6 {
+  color: #222;
+}
+
+/* Print styles */
+@media print {
+  .backgrounds {
+    background-color: var(--bg-primary);
+  }
+}
+
+/* SixPivot-themed presentation components */
+.sixpivot-modern .presentation-title,
+.reveal .presentation-title {
+  background: linear-gradient(135deg, var(--sixpivot-green) 0%, var(--sixpivot-green-light) 50%, var(--sixpivot-green-lighter) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* SixPivot-themed author box */
+.reveal .author-header {
+  background: linear-gradient(135deg, rgba(78, 137, 80, 0.15), rgba(63, 109, 64, 0.2));
+  border: 1px solid rgba(97, 164, 98, 0.4);
+}
+
+.reveal .author-header::before {
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(97, 164, 98, 0.15), 
+    transparent);
+}
+
+.reveal .author-avatar {
+  border: 2px solid rgba(97, 164, 98, 0.6);
+}
+
+.reveal .author-header.gradient-border {
+  background: var(--bg-secondary);
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(var(--bg-secondary), var(--bg-secondary)),
+    linear-gradient(135deg, var(--sixpivot-green), var(--sixpivot-green-light), var(--sixpivot-green-lighter));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* SixPivot-themed date badge */
+.reveal .presentation-date {
+  background: linear-gradient(135deg, rgba(78, 137, 80, 0.1), rgba(63, 109, 64, 0.15));
+  border: 1px solid var(--sixpivot-green-dark);
+  color: var(--sixpivot-green-lighter);
+}
+
+/* Avatar placeholder with SixPivot colors */
+.reveal .author-avatar:not([src]),
+.reveal .author-avatar[src=""],
+.reveal .author-avatar[src="assets/img/author.jpg"]:not([src*="http"]) {
+  background: linear-gradient(135deg, var(--sixpivot-green), var(--sixpivot-green-light));
+}

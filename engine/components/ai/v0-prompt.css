@@ -1,0 +1,232 @@
+/* v0 Prompt UI Component */
+.v0-prompt-container {
+  background: #0a0a0a;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+/* Reset inherited styles */
+.v0-prompt-container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* Header */
+.v0-prompt-header {
+  text-align: center;
+  padding: 50px 20px 40px;
+  flex: 1;
+}
+
+.v0-prompt-title {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-transform: none !important;
+  letter-spacing: -0.5px !important;
+}
+
+/* Input Area */
+.v0-prompt-input-wrapper {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.v0-prompt-input-container {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition: border-color 0.2s;
+  position: relative;
+}
+
+.v0-prompt-input-container:focus-within {
+  border-color: #404040;
+}
+
+/* Input group */
+.v0-prompt-input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+/* Plus button */
+.v0-prompt-plus {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+  color: #666;
+  width: 24px;
+  height: 24px;
+}
+
+.v0-prompt-plus:hover {
+  color: #888;
+}
+
+.v0-prompt-plus svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Textarea */
+.v0-prompt-textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #cccccc !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  text-align: left !important;
+  padding: 0;
+}
+
+.v0-prompt-textarea::placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+/* Agent badge */
+.v0-prompt-agent {
+  background: #00c896;
+  color: #000000 !important;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  border: none;
+  line-height: 1.2 !important;
+}
+
+.v0-prompt-agent:hover {
+  background: #00b386;
+}
+
+/* Submit button */
+.v0-prompt-submit {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+  color: #666;
+}
+
+.v0-prompt-submit:hover {
+  color: #888;
+}
+
+.v0-prompt-submit svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Separator */
+.v0-prompt-separator {
+  width: 1px;
+  height: 24px;
+  background: #262626;
+  margin: 0 8px;
+  flex-shrink: 0;
+}
+
+/* Quick actions */
+.v0-prompt-quick-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.v0-prompt-quick-action {
+  background: transparent;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  padding: 10px 16px;
+  color: #cccccc !important;
+  font-size: 14px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  line-height: 1.2 !important;
+  text-align: center !important;
+}
+
+.v0-prompt-quick-action:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #404040;
+  color: #ffffff !important;
+}
+
+.v0-prompt-quick-action svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .v0-prompt-container {
+    margin: 10px;
+    height: 300px;
+  }
+  
+  .v0-prompt-header {
+    padding: 40px 20px 30px;
+  }
+  
+  .v0-prompt-title {
+    font-size: 28px !important;
+  }
+  
+  .v0-prompt-input-wrapper {
+    padding: 0 15px 15px;
+  }
+  
+  .v0-prompt-quick-actions {
+    display: none;
+  }
+}

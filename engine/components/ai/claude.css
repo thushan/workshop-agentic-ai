@@ -1,0 +1,288 @@
+/* Claude UI Component */
+.claude-container {
+  background: #2a2b32;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Claude Header */
+.claude-header {
+  background: #1e1f25;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.claude-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.claude-logo {
+  width: 28px;
+  height: 28px;
+  color: #d4a574;
+}
+
+.claude-model-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2a2b32;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.claude-model-selector:hover {
+  background: #323339;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.claude-model-name {
+  color: #f4f4f6;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.claude-model-chevron {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+}
+
+/* Claude Chat Area */
+.claude-chat-area {
+  height: 400px;
+  overflow-y: auto;
+  padding: 24px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #3f4046 #2a2b32;
+}
+
+.claude-chat-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.claude-chat-area::-webkit-scrollbar-track {
+  background: #2a2b32;
+}
+
+.claude-chat-area::-webkit-scrollbar-thumb {
+  background: #3f4046;
+  border-radius: 4px;
+}
+
+.claude-chat-area::-webkit-scrollbar-thumb:hover {
+  background: #4a4b52;
+}
+
+/* Message Blocks */
+.claude-message {
+  padding: 24px 0;
+}
+
+.claude-message-content {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.claude-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.claude-message.user .claude-avatar {
+  background: #5b5f6b;
+  color: white;
+}
+
+.claude-message.assistant .claude-avatar {
+  background: #d4a574;
+  color: #2a2b32;
+}
+
+.claude-text {
+  flex: 1;
+  color: #f4f4f6;
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.claude-message.user .claude-text {
+  background: #3f4046;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Input Area */
+.claude-input-area {
+  background: #2a2b32;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.claude-input-wrapper {
+  max-width: 740px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.claude-input {
+  width: 100%;
+  background: #1e1f25;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px 50px 14px 16px;
+  color: #f4f4f6;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: none;
+  min-height: 56px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.claude-input:focus {
+  outline: none;
+  border-color: #d4a574;
+  box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+}
+
+.claude-input::placeholder {
+  color: #6b6d77;
+}
+
+.claude-send-button {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: #d4a574;
+  border: none;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.claude-send-button:hover {
+  background: #c4955f;
+  transform: scale(1.05);
+}
+
+.claude-send-button.disabled {
+  background: #3f4046;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+.claude-send-icon {
+  width: 16px;
+  height: 16px;
+  color: #2a2b32;
+}
+
+/* Code blocks in Claude */
+.claude-text pre {
+  background: #1e1f25;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 12px 0;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.claude-text code {
+  background: #1e1f25;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  color: #d4a574;
+}
+
+.claude-text pre code {
+  background: none;
+  padding: 0;
+  color: #f4f4f6;
+}
+
+/* Claude thinking indicator */
+.claude-thinking {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8b8d97;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.claude-thinking-dot {
+  width: 6px;
+  height: 6px;
+  background: #8b8d97;
+  border-radius: 50%;
+  animation: claude-thinking 1.4s ease-in-out infinite;
+}
+
+.claude-thinking-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.claude-thinking-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes claude-thinking {
+  0%, 60%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .claude-container {
+    margin: 10px;
+  }
+  
+  .claude-message-content {
+    padding: 0 16px;
+  }
+  
+  .claude-text {
+    font-size: 14px;
+  }
+}

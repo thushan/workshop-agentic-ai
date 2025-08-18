@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mermaid Diagram Examples</title>
+    <link rel="stylesheet" href="../engine/reveal.css">
+    <link rel="stylesheet" href="../engine/theme/modern-dark.css">
+    <link rel="stylesheet" href="../engine/plugin/highlight/github-dark.css">
+    <link rel="stylesheet" href="../engine/modern.css">
+    <style>
+        .mermaid {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: auto;
+            max-height: 500px;
+            transform: scale(0.9);
+            transform-origin: center top;
+        }
+        
+        /* Ensure diagrams scale properly */
+        .mermaid svg {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Specific scaling for different diagram types */
+        section[data-diagram="gantt"] .mermaid,
+        section[data-diagram="gitgraph"] .mermaid {
+            transform: scale(0.8);
+        }
+        
+        /* Responsive scaling */
+        @media (max-width: 768px) {
+            .mermaid {
+                transform: scale(0.75);
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Flowchart -->
+            <section>
+                <h2>Flowchart Example</h2>
+                <div class="mermaid">
+                    flowchart TD
+                        A[Start] --> B{Is it working?}
+                        B -->|Yes| C[Great!]
+                        B -->|No| D[Debug]
+                        D --> E[Fix the bug]
+                        E --> B
+                        C --> F[Deploy]
+                        F --> G[End]
+                </div>
+            </section>
+            
+            <!-- Sequence Diagram -->
+            <section>
+                <h2>Sequence Diagram</h2>
+                <div class="mermaid">
+                    sequenceDiagram
+                        participant U as User
+                        participant C as Client
+                        participant S as Server
+                        participant D as Database
+                        
+                        U->>C: Click login
+                        C->>S: POST /api/login
+                        S->>D: Query user
+                        D-->>S: User data
+                        S-->>C: JWT token
+                        C-->>U: Show dashboard
+                </div>
+            </section>
+            
+            <!-- Gantt Chart -->
+            <section data-diagram="gantt">
+                <h2>Gantt Chart</h2>
+                <div class="mermaid">
+                    gantt
+                        title Project Timeline
+                        dateFormat YYYY-MM-DD
+                        section Design
+                        Wireframes          :done,    des1, 2024-01-01, 7d
+                        Mockups            :done,    des2, after des1, 5d
+                        Design System      :active,  des3, after des2, 7d
+                        section Development
+                        Backend API        :         dev1, after des2, 14d
+                        Frontend           :         dev2, after dev1, 21d
+                        Testing            :         dev3, after dev2, 7d
+                        section Deployment
+                        Staging            :         dep1, after dev3, 3d
+                        Production         :         dep2, after dep1, 1d
+                </div>
+            </section>
+            
+            <!-- State Diagram -->
+            <section>
+                <h2>State Diagram</h2>
+                <div class="mermaid">
+                    stateDiagram-v2
+                        [*] --> Idle
+                        Idle --> Loading: Fetch data
+                        Loading --> Success: Data received
+                        Loading --> Error: Request failed
+                        Success --> Idle: Reset
+                        Error --> Idle: Retry
+                        Error --> [*]: Give up
+                </div>
+            </section>
+            
+            <!-- Pie Chart -->
+            <section>
+                <h2>Pie Chart</h2>
+                <div class="mermaid">
+                    pie title Technology Stack
+                        "React" : 35
+                        "Node.js" : 25
+                        "TypeScript" : 20
+                        "PostgreSQL" : 15
+                        "Other" : 5
+                </div>
+            </section>
+            
+            <!-- Git Graph -->
+            <section data-diagram="gitgraph">
+                <h2>Git Graph</h2>
+                <div class="mermaid">
+                    gitGraph
+                        commit
+                        commit
+                        branch feature/auth
+                        checkout feature/auth
+                        commit
+                        commit
+                        checkout main
+                        commit
+                        merge feature/auth
+                        branch feature/ui
+                        checkout feature/ui
+                        commit
+                        commit
+                        checkout main
+                        merge feature/ui
+                        commit
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="../engine/reveal.js"></script>
+    <script src="../engine/plugin/highlight/highlight.js"></script>
+    <script src="../engine/modern-enhancements.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        // Initialize mermaid with dark theme
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                primaryColor: '#a78bfa',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#7c3aed',
+                lineColor: '#94a3b8',
+                secondaryColor: '#60a5fa',
+                tertiaryColor: '#f472b6',
+                background: '#1e293b',
+                mainBkg: '#1e293b',
+                secondBkg: '#334155',
+                tertiaryBkg: '#475569',
+                primaryBorderColor: '#7c3aed',
+                secondaryBorderColor: '#2563eb',
+                tertiaryBorderColor: '#db2777',
+                primaryTextColor: '#fff',
+                secondaryTextColor: '#fff',
+                tertiaryTextColor: '#fff',
+                lineColor: '#94a3b8',
+                textColor: '#e2e8f0',
+                mainContrastColor: '#e2e8f0',
+                darkMode: true
+            }
+        });
+        
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealHighlight ]
+        });
+    </script>
+</body>
+</html>
