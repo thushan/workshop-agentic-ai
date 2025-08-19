@@ -790,6 +790,19 @@ pre:hover .copy-button,
     font-weight: 600;
     color: var(--sixpivot-green);
 }
+/* Subtle slide link styling */
+.slide-link {
+    color: var(--text-primary) !important;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+    text-underline-offset: 2px;
+    transition: text-decoration-color var(--transition-fast);
+}
+
+.slide-link:hover {
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Icon-based lists without bullet points */
 .reveal ul.icon-list {
     list-style: none;
