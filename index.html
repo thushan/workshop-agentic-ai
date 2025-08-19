@@ -1172,6 +1172,7 @@
 
 			</section>
 
+			<section>
 			<!-- Act 4: Applying at MentorLoop -->
 			<section class="section-divider" id="act-4-applying-at-mentorloop">
 				<div class="section-number">4</div>
@@ -1179,6 +1180,136 @@
 					<h1 class="section-title">Applying at MentorLoop</h1>
 					<p class="section-subtitle">Real-World Use Cases</p>
 				</div>
+			</section>
+			<!-- Act 4 - EDNA: Intro -->
+			<section id="edna-intro" class="use-case-compact">
+			<h3>EDNA - Engagement Development Nudge Agent</h3>
+			<p class="subtitle-compact">Find at-risk pairs and draft supportive nudges grounded in program context</p>
+
+			<div class="use-case-grid">
+				<div class="use-case-process">
+				<div class="process-item fragment">
+					<span class="process-icon">🎯</span>
+					<div class="process-content">
+					<strong>Purpose</strong>
+					<span class="process-detail">Spot quiet pairs & suggest next steps</span>
+					</div>
+				</div>
+				<div class="process-item fragment">
+					<span class="process-icon">📊</span>
+					<div class="process-content">
+					<strong>Analyze</strong>
+					<span class="process-detail">Recent activity, goals & engagement</span>
+					</div>
+				</div>
+				<div class="process-item fragment">
+					<span class="process-icon">🔍</span>
+					<div class="process-content">
+					<strong>Classify</strong>
+					<span class="process-detail">Dormant, one-sided, or healthy</span>
+					</div>
+				</div>
+				<div class="process-item fragment">
+					<span class="process-icon">💡</span>
+					<div class="process-content">
+					<strong>RAG Tips</strong>
+					<span class="process-detail">Ground nudges in best practices</span>
+					</div>
+				</div>
+				<div class="process-item fragment">
+					<span class="process-icon">✉️</span>
+					<div class="process-content">
+					<strong>Draft</strong>
+					<span class="process-detail">Supportive nudge with context</span>
+					</div>
+				</div>
+				<div class="process-item fragment">
+					<span class="process-icon">✅</span>
+					<div class="process-content">
+					<strong>Guardrails</strong>
+					<span class="process-detail">Tone check & duplicate prevention</span>
+					</div>
+				</div>
+				</div>
+
+				<div class="use-case-benefits">
+				<h4 class="benefits-title">Key Features</h4>
+				<div class="benefit-item fragment"><span class="benefit-icon">⚡</span><span>Early intervention for at-risk pairs</span></div>
+				<div class="benefit-item fragment"><span class="benefit-icon">🤖</span><span>AI-powered but human-approved</span></div>
+				<div class="benefit-item fragment"><span class="benefit-icon">📚</span><span>Grounded in mentoring tips</span></div>
+				<div class="benefit-item fragment"><span class="benefit-icon">🛡️</span><span>7-day duplicate prevention</span></div>
+				</div>
+			</div>
+			</section>
+
+			<!-- Act 4 - EDNA: Run -->
+			<section id="edna-run">
+			<h2>EDNA Example</h2>
+			<ul>
+				<li class="fragment">Detects under-engaged pairs</li>
+				<li class="fragment">Suggests supportive nudges</li>
+				<li class="fragment">Backed by mentoring best-practice tips</li>
+			</ul>
+
+			<div class="terminal-window">
+				<div class="terminal-header">
+				<span class="terminal-button close"></span>
+				<span class="terminal-button minimize"></span>
+				<span class="terminal-button maximize"></span>
+				<span class="terminal-title">EDNA - examples/edna-py/edna-langchain</span>
+				</div>
+				<div class="terminal-content">
+				<div class="terminal-block">
+					<span class="cmd-comment"># Run EDNA on MentorLoop dataset</span>
+					<span class="cmd-prompt">$</span>
+					<span class="cmd-command">PROVIDER=ollama MODEL=llama3.1:8b python -m edna.cli suggest --since-days 30 --limit 5</span>
+				</div>
+				<div class="terminal-block">
+					<span class="cmd-comment"># Who is dormant, when to nudge, and via what channel</span>
+					<span class="cmd-output">+-----------+------------------+--------------+------------------+-----------+
+			| Pair ID   | Classification   |   Confidence | Send Time        | Channel   |
+			+===========+==================+==============+==================+===========+
+			| p007      | dormant          |          0.9 | 2025-08-20 09:15 | email     |
+			| p009      | dormant          |          0.9 | 2025-08-20 09:15 | email     |
+			| p008      | dormant          |          0.9 | 2025-08-20 09:15 | email     |
+					</span>
+				</div>
+				</div>
+			</div>
+			</section>
+			<!-- Act 4 - EDNA: JSON Detail -->
+			<section id="edna-json">
+			<h2>Behind the Scenes</h2>
+
+			<div class="terminal-window">
+				<div class="terminal-header">
+				<span class="terminal-button close"></span>
+				<span class="terminal-button minimize"></span>
+				<span class="terminal-button maximize"></span>
+				<span class="terminal-title">EDNA JSON Record - examples/edna-py/edna-langchain</span>
+				</div>
+				<div class="terminal-content">
+				<div class="terminal-block">
+					<span class="cmd-comment"># One record in JSONL with reasons, draft, and citations - out/edna_suggestions.jsonl</span>
+					<span class="cmd-output">{
+			"pair_id": "p007",
+			"classification": "dormant",
+			"confidence": 0.9,
+			"explanations": [
+				"last message 23 days ago vs cadence 10",
+				"no check-ins recorded in 21 days"
+			],
+			"nudge_draft": "Hi Priya — just checking in, would this week be a good time to reconnect?",
+			"citations": [
+				{"tip_id": "t1", "score": 0.73}
+			]
+			}</span>
+				</div>
+				</div>
+			</div>
+			</section>
+
+
 			</section>
 
 			<!-- Act 5: Road to Production -->
