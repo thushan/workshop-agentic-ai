@@ -8,7 +8,7 @@ Presentation template.
 
 ## Getting Started
 
-[![Presentation Preview](https://img.shields.io/badge/View-Presentation%20Online-informational?style=for-the-badge)](https://thushan.github.io/talk-template)
+[![Presentation Preview](https://img.shields.io/badge/View-Presentation%20Online-informational?style=for-the-badge)](https://thushan.github.io/workshop-agentic-ai)
 
 You can open this project within VSCode and preview the `index.html` file which includes the full presentation slides + memes & examples.
 
