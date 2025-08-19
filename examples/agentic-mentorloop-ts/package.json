@@ -1,0 +1,19 @@
+{
+  "name": "agentic-mentorloop-ts",
+  "version": "1.0.0",
+  "description": "Minimal agent loop for MentorLoop scenarios",
+  "main": "src/cli.ts",
+  "scripts": {
+    "demo:deterministic": "ts-node src/cli.ts --prompt \"engagement pulse for dormant mentees\"",
+    "demo:ollama": "PROVIDER=ollama MODEL=llama3.1:8b ts-node src/cli.ts --prompt \"compose supportive nudge for dormant mentee\"",
+    "demo:openai": "PROVIDER=openai MODEL=gpt-4o-mini ts-node src/cli.ts --prompt \"which mentees need engagement support\""
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}

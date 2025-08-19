@@ -1,0 +1,31 @@
+pair_id,goal_id,title,status,updated_at
+p001,g001,Complete leadership course,in_progress,2023-07-15T10:00:00Z
+p001,g002,Improve presentation skills,done,2023-07-01T11:30:00Z
+p001,g003,Build professional network,in_progress,2023-07-18T09:15:00Z
+p002,g004,Transition to product management,blocked,2023-06-28T14:00:00Z
+p002,g005,Learn data analysis tools,in_progress,2023-07-10T15:30:00Z
+p003,g006,Develop strategic thinking,in_progress,2023-07-12T08:45:00Z
+p003,g007,Lead team project,done,2023-06-25T10:00:00Z
+p004,g008,Improve time management,in_progress,2023-07-16T13:20:00Z
+p004,g009,Master agile methodologies,in_progress,2023-07-14T11:00:00Z
+p005,g010,Build technical skills,blocked,2023-06-20T09:30:00Z
+p005,g011,Enhance communication,done,2023-06-30T14:15:00Z
+p006,g012,Prepare for promotion,in_progress,2023-07-17T10:45:00Z
+p006,g013,Develop mentoring skills,in_progress,2023-07-13T12:00:00Z
+p007,g014,Career pivot planning,blocked,2023-06-15T08:30:00Z
+p007,g015,Industry certification,in_progress,2023-07-11T15:00:00Z
+p008,g016,Quarterly objectives,done,2023-07-05T11:30:00Z
+p008,g017,Stakeholder management,in_progress,2023-07-19T09:00:00Z
+p008,g018,Process improvement,in_progress,2023-07-08T13:45:00Z
+p009,g019,Public speaking confidence,done,2023-06-27T10:15:00Z
+p009,g020,Cross-functional collaboration,in_progress,2023-07-16T14:30:00Z
+p010,g021,Performance review prep,in_progress,2023-07-18T11:00:00Z
+p010,g022,Conflict resolution skills,in_progress,2023-07-12T09:30:00Z
+p001,g023,Quarterly review preparation,done,2023-07-02T15:20:00Z
+p003,g024,Team leadership workshop,in_progress,2023-07-15T08:00:00Z
+p005,g025,Technical documentation,blocked,2023-06-22T12:30:00Z
+p006,g026,Client relationship building,in_progress,2023-07-14T10:00:00Z
+p007,g027,Budget management training,done,2023-06-29T13:00:00Z
+p008,g028,Innovation project launch,in_progress,2023-07-17T14:45:00Z
+p009,g029,Feedback culture development,done,2023-07-03T11:15:00Z
+p010,g030,Strategic planning skills,in_progress,2023-07-19T09:45:00Z

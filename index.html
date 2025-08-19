@@ -8,13 +8,13 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	<meta name="description" content="">
-	<meta name="author" content="Thushan Fernando">
+	<meta name="author" content="Thushan Fernando - SixPivot">
 
-	<title>Fancy Title (2024)</title>
+	<title>Workshop: Agentic AI (2025)</title>
 
 	<link rel="stylesheet" href="engine/reset.css">
 	<link rel="stylesheet" href="engine/reveal.css">
-	<link rel="stylesheet" href="engine/theme/modern-dark.css" id="theme">
+	<link rel="stylesheet" href="engine/theme/sixpivot-modern.css" id="theme">
 	<link rel="stylesheet" href="engine/modern.css">
 	<link rel="stylesheet" href="engine/thushan.css">
 	<link rel="stylesheet" href="engine/plugin/highlight/claude-dark.css" id="highlight-theme">
@@ -24,43 +24,1268 @@
 		<div class="slides">
 			<!-- Title Slide -->
 			<section class="title-slide">
-				<div class="presentation-header">
-					<h1 class="presentation-title">Your Presentation Title</h1>
-					<p class="presentation-subtitle">A compelling subtitle or tagline</p>
+				<div class="sixpivot-header">
+					<p class="sixpivot-header-title">
+						<span class="sixpivot-brand">⬢</span> MentorLoop <strong>Workshop</strong>
+					</p>
 				</div>
 				
-				<div class="presentation-date">January 2025</div>
+				<div class="presentation-header">
+					<h1 class="presentation-title">Agentic AI</h1>
+					<p class="presentation-subtitle">Building Smarter Loops with LLMs</p>
+				</div>
 				
-				<div class="author-header">
+				<div class="presentation-date">August 2025</div>
+				
+				<div class="author-header gradient-border author-header-compact">
 					<div class="author-header-content">
-						<img src="assets/img/author.jpg" alt="Author" class="author-avatar">
-						<div class="author-info">
-							<p class="author-header-title">Your Name</p>
-							<p class="author-header-github">
-								<svg class="github-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-								</svg>
-								<a href="https://github.com/yourusername/your-repo">yourusername/your-repo</a>
-							</p>
+						<img src="assets/img/author.jpg" alt="Author" class="author-avatar author-avatar-compact">
+						<div class="author-info author-info-compact">
+							<div class="author-header-name">Thushan Fernando</div>
+							<div class="author-header-role-compact">Senior Consultant</div>
+							<div class="author-header-company">
+								<span class="sixpivot-brand">⬢</span>
+								<a href="https://sixpivot.com.au" target="_blank">sixpivot.com.au</a>
+							</div>
+							<div class="author-github">
+								<a href="https://github.com/thushan" target="_blank">
+									<svg class="github-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+									</svg>
+									github.com/thushan
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<!-- Agenda Slide -->
 			<section>
-				<h3>Flowchart</h3>
-				<div class="mermaid">
-				  <pre>
-					%%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
-					flowchart TD
-					  A[Start] --> B{Is it?};
-					  B -- Yes --> C[OK];
-					  C --> D[Rethink];
-					  D --> B;
-					  B -- No ----> E[End];
-				  </pre>
+				<h2>Agenda</h2>
+				<div class="agenda-container agenda-simple">
+					<a href="#/act-1-foundations" class="agenda-item agenda-link">
+						<div class="agenda-number">1</div>
+						<div class="agenda-content">
+							<h3>Foundations</h3>
+							<p class="agenda-time">30-35 min</p>
+						</div>
+					</a>
+					
+					<a href="#/act-2-agentic-concepts" class="agenda-item agenda-link">
+						<div class="agenda-number">2</div>
+						<div class="agenda-content">
+							<h3>Agentic Concepts</h3>
+							<p class="agenda-time">40-45 min</p>
+						</div>
+					</a>
+					
+					<a href="#/act-3-building-agentic" class="agenda-item agenda-link">
+						<div class="agenda-number">3</div>
+						<div class="agenda-content">
+							<h3>Building Agentic</h3>
+							<p class="agenda-time">50-60 min</p>
+						</div>
+					</a>
+					
+					<a href="#/act-4-applying-at-mentorloop" class="agenda-item agenda-link">
+						<div class="agenda-number">4</div>
+						<div class="agenda-content">
+							<h3>Applying at MentorLoop</h3>
+							<p class="agenda-time">15-20 min</p>
+						</div>
+					</a>
+					
+					<a href="#/act-5-road-to-production" class="agenda-item agenda-link">
+						<div class="agenda-number">5</div>
+						<div class="agenda-content">
+							<h3>Road to Production</h3>
+							<p class="agenda-time">15-20 min</p>
+						</div>
+					</a>
 				</div>
-			  </section>
+			</section>
+
+			<!-- Act 1: Foundations -->
+			 <section>
+				<section class="section-divider" id="act-1-foundations">
+					<div class="section-number">1</div>
+					<div class="section-content">
+						<h1 class="section-title">Foundations</h1>
+						<p class="section-subtitle">Understanding the Building Blocks</p>
+					</div>
+				</section>
+				<section>
+					<h3>AI has been on a journey</h3>
+					<img src="assets/img/history-ai.png" alt="History of AI" class="boring center" />
+				</section>
+				<section>
+					<h3>Life before Modern AI</h3>
+					<ul>
+						<li class="fragment"><strong>Rule-based systems</strong> - if/else logic, brittle, hard to scale</li>
+						<li class="fragment"><strong>Traditional NLP</strong> - tokenisation, regex, bag-of-words</li>
+						<li class="fragment"><strong>Classic ML</strong> - models trained on features, narrow scope</li>
+						<li class="fragment">Useful, but limited → <em>not conversational, not adaptive</em></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Machine Learning Models</h3>
+					<div class="feature-grid-2">
+						<div class="feature-card fragment">
+						<h4>📊 Traditional ML</h4>
+						<p><strong>Decision Trees, Random Forests, Regression</strong></p>
+						<p>Worked well on <em>structured/tabular data</em> like spreadsheets and metrics.</p>
+						<div class="feature-card-footer">
+							Narrow scope · Feature engineering required
+						</div>
+						</div>
+						<div class="feature-card fragment">
+						<h4>🧠 Deep Learning</h4>
+						<p><strong>CNNs, RNNs, Neural Nets</strong></p>
+						<p>Powerful for <em>images, speech, sequences</em>. Set the stage for transformers.</p>
+						<div class="feature-card-footer">
+							Enabled unstructured data → paved way to LLMs
+						</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Objects To Vectors</h3>
+					<p class="smaller fragment">How models convert objects into vectors</p>
+					<img src="assets/diagrams/transformer-less.excalidraw.png" alt="Before Transformers" class="boring center fragment" />
+					<p class="smaller fragment">We can unify all modalities into <strong class="highlight-purple">one architecture...</strong></p>
+				</section>
+				<section>
+					<h3>Transformers + multimodal</h3>
+					<img src="assets/diagrams/transformers.excalidraw.png" alt="Vectors & Embeddings" class="boring center" />
+					<ul class="smaller">
+						<li class="fragment">One <strong class="highlight-purple">unified architecture</strong> - same model, many tasks</li>
+						<li class="fragment">Handles text, images, audio and video</li>
+						<li class="fragment">Normalises to <strong class="highlight-pink">Vectors (Embeddings)</strong></li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Demo: Characters can speak</h2>
+					<video muted controls class="center-video">
+						<source src="assets/examples/veo3.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</section>
+				<section>
+				<h3>What are LLMs?</h3>
+				<ul>
+					<li class="fragment">Large Language Models predict the <em>next token</em> for a given context.</li>
+					<li class="fragment">Great for Q&amp;A, summarising, transforming text &amp; code.</li>
+					<li class="fragment"><strong>But</strong> by default: <strong>stateless</strong> and <strong>one-shot</strong>.</li>
+				</ul>
+				<aside class="notes">
+					Keep it tight-audience are devs. The key idea is “stateless by default.”
+				</aside>
+				</section>
+				<section>
+					<h3>Limitations of LLMs</h3>
+					<ul>
+						<li class="fragment"><strong>Stateless</strong> - no memory beyond the prompt</li>
+						<li class="fragment"><strong>No planning</strong> - one-shot answers only</li>
+						<li class="fragment"><strong>No actions</strong> - inability to use external tools or APIs</li>
+						<li class="fragment"><strong>Hallucinations</strong> - confident but wrong outputs</li>
+					</ul>
+					<p class="smaller fragment">→ Sets the stage for <em>Agentic AI</em></p>
+				</section>
+				<section>
+				<h3>From One-Shot to Agentic Loops</h3>
+				<div class="feature-grid-2">
+					<div class="feature-card fragment">
+					<h4>🎯 One-Shot LLM</h4>
+					<p>Takes an <strong>input</strong> and produces a <strong>single output</strong>.</p>
+					<p>No <em>memory</em>, no <em>planning</em>, no <em>tools</em>.</p>
+					<div class="feature-card-footer">
+						One step · Stateless
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🔄 Agentic AI</h4>
+					<p>Operates as a <strong>loop</strong>: Goal → Decide → Act → Reflect.</p>
+					<p>Adds <strong>memory</strong>, <strong>planning</strong> and <strong>tools use</strong>.</p>
+					<div class="feature-card-footer">
+						Multi-step · Goal-driven
+					</div>
+					</div>
+				</div>
+				</section>
+				<section id="claude-code-slide">
+					<h3>Claude Code - Agentic Refactor</h3>
+					<img src="assets/img/agentic-taste.png" alt="Claude Code Refactor" class="boring center" />
+					<p class="smaller fragment">Claude Code <a href="https://www.github.com/thushan/olla">refactored a large codebase</a> with agents.</p>
+				</section>
+				<section>
+				<h2>Why Agentic?</h2>
+				<div class="feature-grid-3">
+					<div class="feature-card fragment">
+					<h4>📈 Momentum</h4>
+					<p>Industry shift toward <strong>multi-step AI</strong> with agents becoming a core pattern in modern frameworks.</p>
+					<div class="feature-card-footer">
+						🌍📊 <span class="separator">•</span> 🔧
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>💡 SaaS Value</h4>
+					<p>Automates <strong>repetitive workflows</strong>, reduces friction and delivers a smoother <strong>user experience</strong>.</p>
+					<div class="feature-card-footer">
+						⚡🛠️ <span class="separator">•</span> 😀
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🤝 MentorLoop</h4>
+					<p>Drives <strong>nudges</strong>, improves mentor-mentee matching and gives admins clearer visibility</p>
+					<div class="feature-card-footer">
+						📬🔍 <span class="separator">•</span> 🧭
+					</div>
+					</div>
+				</div>
+				</section>
+				<section>
+				<h2>RAG</h2>
+				<div class="feature-grid-3">
+					<div class="feature-card fragment">
+					<h4>🔎 Retrieve</h4>
+					<p>Search <strong>trusted sources</strong> (docs, knowledge base, support tickets) for relevant snippets.</p>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🧩 Augment</h4>
+					<p>Attach the <strong>retrieved context</strong> to the prompt so the model is grounded.</p>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🗣️ Generate</h4>
+					<p>LLM produces an answer that <strong>cites</strong> and stays aligned with your data.</p>
+					</div>
+				</div>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Bottom Line</span>
+					<p>Ground outputs in your data → accurate, current and auditable</p>
+				</div>
+				</section>				
+				<section>
+				<h3>Retrieval-Augmented Generation (RAG)</h3>
+				<img src="assets/diagrams/rag-simple.excalidraw.png" alt="RAG flow" class="center" />
+				<p class="smaller">Ground LLM outputs with your company's data</p>
+				</section>
+				<section>
+				<h3>RAG Benefits</h3>
+				<ul>
+					<li class="fragment">Grounded answers with <strong>company-specific data</strong></li>
+					<li class="fragment">Improved accuracy and <strong>relevance</strong></li>
+					<li class="fragment">Works <strong>without extra model training</strong></li>
+					<li class="fragment">Enables <strong>traceable outputs</strong> with citations</li>
+				</ul>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Ensures</span>
+					<p>Keeps your AI outputs fresh, accurate and aligned with your domain data - eg. Mentor Bios, skills, past session.</p>
+				</div>
+				</section>
+				<section>
+				<h3>When to Use RAG</h3>
+				<ul>
+					<li class="fragment">You need <strong>company-specific</strong> or <strong>fresh</strong> knowledge</li>
+					<li class="fragment">You want <strong>traceable answers</strong> with sources/citations</li>
+					<li class="fragment">You prefer <strong>zero-model training</strong> over fine-tuning</li>
+				</ul>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Hand in hand with agents</span>
+					<p>Tools fetch right context → model generates grounded answers</p>
+				</div>
+				</section>
+
+				<section class="rag-enterprise">
+				<h3>RAG for Enterprise</h3>
+				<p class="subtitle-compact">Retrieve relevant knowledge → Generate grounded output</p>
+				
+				<div class="rag-enterprise-grid">
+					<div class="rag-pipeline">
+						<div class="pipeline-item fragment">
+							<span class="pipeline-number">1</span>
+							<div class="pipeline-content">
+								<strong>Query</strong>
+								<span class="pipeline-detail">Capture user need</span>
+							</div>
+							<span class="pipeline-arrow">→</span>
+						</div>
+						<div class="pipeline-item fragment">
+							<span class="pipeline-number">2</span>
+							<div class="pipeline-content">
+								<strong>Retrieve</strong>
+								<span class="pipeline-detail">Search trusted sources</span>
+							</div>
+							<span class="pipeline-arrow">→</span>
+						</div>
+						<div class="pipeline-item fragment">
+							<span class="pipeline-number">3</span>
+							<div class="pipeline-content">
+								<strong>Augment</strong>
+								<span class="pipeline-detail">Attach context to prompt</span>
+							</div>
+							<span class="pipeline-arrow">→</span>
+						</div>
+						<div class="pipeline-item fragment">
+							<span class="pipeline-number">4</span>
+							<div class="pipeline-content">
+								<strong>Generate</strong>
+								<span class="pipeline-detail">Produce grounded response</span>
+							</div>
+							<span class="pipeline-checkmark">✓</span>
+						</div>
+					</div>
+					
+					<div class="rag-enterprise-benefits">
+						<div class="enterprise-badge">Enterprise Ready</div>
+						<div class="enterprise-features">
+							<div class="enterprise-feature fragment">
+								<span class="feature-icon">🔒</span>
+								<div>
+									<strong>Governed</strong>
+									<span>Controlled data access</span>
+								</div>
+							</div>
+							<div class="enterprise-feature fragment">
+								<span class="feature-icon">📋</span>
+								<div>
+									<strong>Auditable</strong>
+									<span>Full traceability</span>
+								</div>
+							</div>
+							<div class="enterprise-feature fragment">
+								<span class="feature-icon">🔄</span>
+								<div>
+									<strong>Fresh</strong>
+									<span>Real-time updates</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</section>
+				<!--
+				<section class="demo-slide">
+					<h2>Demo</h2>
+					<p class="demo-subtitle">Building a RAG Pipeline</p>
+				</section>
+				<section class="use-case-slide">
+					<h2>Use Case</h2>
+					<p class="use-case-subtitle">Automating mentor-mentee matching with AI-powered recommendations based on skills, goals, and past interactions</p>
+				</section>
+				-->
+				<!--
+				<section>
+					<h3>Use Case: Customer Support</h3>
+					<p class="smaller">Enhancing support interactions with RAG</p>
+					<ol>
+						<li class="fragment"><strong>Query</strong> - customer asks a question</li>
+						<li class="fragment"><strong>Retrieve</strong> - fetch relevant support articles</li>
+						<li class="fragment"><strong>Augment</strong> - add context to the query</li>
+						<li class="fragment"><strong>Generate</strong> - provide a grounded response</li>
+					</ol>
+					<ul class="idea" style="font-size: 0.9em;">
+						<li class="fragment">Integrate with CRM for personalised responses</li>
+						<li class="fragment">Use chat history / past tickets for context</li>
+						<li class="fragment">Implement feedback loops for continuous improvement</li>
+					</ul>
+				</section>
+			-->
+				<section class="use-case-compact">
+				<h3>Use Case: Mentor Matching</h3>
+				<p class="subtitle-compact">Improving mentor-mentee connections with RAG</p>
+				
+				<div class="use-case-grid">
+					<div class="use-case-process">
+						<div class="process-item fragment">
+							<span class="process-icon">🔍</span>
+							<div class="process-content">
+								<strong>Query</strong>
+								<span class="process-detail">Mentee requests specific skills/goals</span>
+							</div>
+						</div>
+						<div class="process-item fragment">
+							<span class="process-icon">📚</span>
+							<div class="process-content">
+								<strong>Retrieve</strong>
+								<span class="process-detail">Search bios, skills, session notes</span>
+							</div>
+						</div>
+						<div class="process-item fragment">
+							<span class="process-icon">🧩</span>
+							<div class="process-content">
+								<strong>Augment</strong>
+								<span class="process-detail">Add mentor profiles & context</span>
+							</div>
+						</div>
+						<div class="process-item fragment">
+							<span class="process-icon">✨</span>
+							<div class="process-content">
+								<strong>Generate</strong>
+								<span class="process-detail">Suggest best matches with reasoning</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="use-case-benefits">
+						<h4 class="benefits-title">Key Benefits</h4>
+						<div class="benefit-item fragment">
+							<span class="benefit-icon">📊</span>
+							<span>Grounded in real program data</span>
+						</div>
+						<div class="benefit-item fragment">
+							<span class="benefit-icon">⚡</span>
+							<span>Reduces admin workload</span>
+						</div>
+						<div class="benefit-item fragment">
+							<span class="benefit-icon">🎯</span>
+							<span>Improves match quality</span>
+						</div>
+						<div class="benefit-item fragment">
+							<span class="benefit-icon">🔄</span>
+							<span>Multiple options with rationale</span>
+						</div>
+					</div>
+				</div>
+				</section>
+			</section>
+
+			<!-- Act 2: Agentic Concepts -->
+			<section>
+				<section class="section-divider" id="act-2-agentic-concepts">
+					<div class="section-number">2</div>
+					<div class="section-content">
+						<h1 class="section-title">Agentic Concepts</h1>
+						<p class="section-subtitle">How Agents Think and Act</p>
+					</div>
+				</section>
+				<section>
+				<h3>What is an Agent?</h3>
+				<p class="smaller">An <strong>agent</strong> is an AI system that <em>decides, acts and learns</em> in a loop - not just one-shot.</p>
+				<img src="assets/diagrams/agentic-loop.excalidraw.png" alt="Agent Loop" class="center" />
+				<p class="smaller fragment">Agents combine <strong>LLM reasoning</strong> with <em>memory</em> and <em>tools</em>.</p>
+				</section>
+				<section>
+				<h3>Tooling</h3>
+				<div class="feature-grid-4">
+					<div class="feature-card fragment">
+					<h4>📊 Database</h4>
+					<p>Query internal program data (bios, feedback, activity logs, skills, goals).</p>
+					</div>
+					<div class="feature-card fragment">
+					<h4>📅 Calendar / Email</h4>
+					<p>Send invites, reminders, or schedule mentoring sessions.</p>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🔍 Search</h4>
+					<p>Look up knowledge base articles or policies to support mentoring.</p>
+					</div>
+					<!--
+					<div class="feature-card fragment">
+					<h4> ⌨️ CLI</h4>
+					<p>Bash Utilities, Powershell, Command Line Apps, less used.</p>
+					</div>
+					-->
+					<div class="feature-card fragment">
+					<h4> 🌐 APIs</h4>
+					<p>Internal / External APIs, MCP Servers, Services - Slack</p>
+					</div>
+				</div>
+				<p class="smaller fragment">🤖 Tools let agents <em>act</em>, not just generate text.</p>
+				<p class="smaller fragment">💡 Remember <a href="#/claude-code-slide">Claude Code refactoring</a> code?</p>
+				</section>
+				<section>
+				<h3>Agent Memory</h3>
+				<div class="feature-grid-2">
+					<div class="feature-card fragment">
+					<h4>📝 Short-Term Memory</h4>
+					<p>Keeps track of the <strong>current conversation</strong> or task</p>
+					<p>Similar to an LLM context window</p>
+					<p>&nbsp;</p>
+					<div class="feature-card-footer">
+						Examples: remembering last mentor searched, current filters, conversation state
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>📚 Long-Term Memory</h4>
+					<p>Persists <strong>knowledge across sessions</strong></p>
+					<p>Can be stored in databases, embeddings or logs</p>
+					<p>&nbsp;</p>
+					<div class="feature-card-footer">
+						Examples: past mentor/mentee interactions, program history, feedback logs
+					</div>
+					</div>
+				</div>
+				<p class="smaller fragment"><em>Short</em> what a mentor remembers from this session</p>
+				<p class="smaller fragment"><em>Long</em> the mentee's entire journey/history across the program</p>
+				</section>
+				<section>
+				<h3>Planning</h3>
+				<p class="smaller">Agents can break a <strong>big goal</strong> into <em>smaller sub-tasks</em>.</p>
+				<img src="assets/diagrams/agentic-planning.excalidraw.png" alt="Agent Planning Flow" class="center" />				
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">MentorLoop Example</span>
+					<p class="smaller">'Boost engagement' → identify inactive mentees → draft nudge → send message</p>
+				</div>
+				</section>
+				<section class="react-pattern-compact">
+				<h3>ReAct Pattern</h3>
+				<p class="subtitle-compact">Reason + Act steps for lightweight planning</p>
+				<p class="subtitle-compact smaller">We're giving it space to think out-loud between actions.</p>
+				<div class="react-grid">
+					<div class="react-card fragment">
+					<h4>🧠 Reason</h4>
+					<p>LLM "thinks aloud" step-by-step</p>
+					<span class="react-example">e.g. I need mentee's goals first</span>
+					</div>
+					<div class="react-card fragment">
+					<h4>⚙️ Act</h4>
+					<p>Call a tool or API, observe result</p>
+					<span class="react-example">e.g. fetch mentee profile from MongoDB</span>
+					</div>
+				</div>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Just in case</span>
+					<p class="smaller">We're not talking React, the Javascript library!</p>
+				</div>
+				</section>
+				<section>					
+				<div class="react-example-flow">
+					<span class="enterprise-badge-inline">MentorLoop Example</span>
+					<div class="react-steps">
+					<div class="react-step"><span class="step-type">Reason</span> → Check mentee goals & skills</div>
+					<div class="react-step"><span class="step-type">Act</span> → Query mentee profile</div>
+					<div class="react-step"><span class="step-type">Reason</span> → Find matching mentors</div>
+					<div class="react-step"><span class="step-type">Act</span> → Search mentor bios</div>
+					<div class="react-step"><span class="step-type">Reason</span> → Rank by score & availability</div>
+					<div class="react-step"><span class="step-type">Act</span> → Generate top 3 suggestions</div>
+					</div>
+				</div>				
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Good Example</span>
+					<p class="smaller">GPT or Claude Thinking/Reasoning?</p>
+				</div>
+				</section>
+				<section>
+				<h3>Evaluation</h3>
+				<ul>
+					<li class="fragment"><strong>Self-checks</strong> - is the output consistent with instructions?</li>
+					<li class="fragment"><strong>Guardrails</strong> - avoid unsafe or biased outputs</li>
+					<li class="fragment"><strong>Feedback loops</strong> - learn from errors or user ratings</li>
+				</ul>	
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Example</span>
+					<p class="smaller">Is this message supportive and on-brand?</p>
+				</div>
+				</section>
+				<section class="building-blocks-slide">
+				<h3>Agentic Building Blocks</h3>
+				<div class="building-blocks-grid">
+					<div class="building-block fragment">
+						<span class="block-icon">🤖</span>
+						<div class="block-content">
+							<h4>Agents</h4>
+							<p>Goal → Act → Reflect</p>
+						</div>
+					</div>
+					<div class="building-block fragment">
+						<span class="block-icon">🛠️</span>
+						<div class="block-content">
+							<h4>Tools</h4>
+							<p>APIs, DB, Calendar</p>
+						</div>
+					</div>
+					<div class="building-block fragment">
+						<span class="block-icon">🧠</span>
+						<div class="block-content">
+							<h4>Memory</h4>
+							<p>Context & History</p>
+						</div>
+					</div>
+					<div class="building-block fragment">
+						<span class="block-icon">🧭</span>
+						<div class="block-content">
+							<h4>Planning</h4>
+							<p>Break down goals</p>
+						</div>
+					</div>
+					<div class="building-block fragment">
+						<span class="block-icon">✅</span>
+						<div class="block-content">
+							<h4>Evaluation</h4>
+							<p>Guardrails & Feedback</p>
+						</div>
+					</div>
+				</div>
+				<div class="mentorloop-examples" style="font-size: .99em;">
+					<ul class="smaller">
+					<li class="fragment"><strong>Tools</strong> → fetch mentee activity logs, survey data, program resources</li>
+					<li class="fragment"><strong>Memory</strong> → track mentee goals and progress across months</li>
+					<li class="fragment"><strong>Planning</strong> → decide when and how to send nudges</li>
+					<li class="fragment"><strong>Evaluation</strong> → check tone of nudges for supportiveness and compliance</li>
+					</ul>
+				</div>
+				</section>
+
+		</section>
+		<section>
+			<section class="section-divider" id="act-25-agentic-usecases">
+				<div class="section-number">2.5</div>
+				<div class="section-content">
+					<h1 class="section-title">Agentic Loop</h1>
+					<p class="section-subtitle">MentorLoop in Action</p>
+				</div>
+			</section>
+			<!-- MentorLoop UseCases -->
+			<section class="use-case-compact">
+		<h3>Use Case: EDNA Nudges</h3>
+		<p class="subtitle-compact">Personalised engagement nudges with tools, memory, and evaluation</p>
+
+		<div class="use-case-grid">
+			<div class="use-case-process">
+			<div class="process-item fragment">
+				<span class="process-icon">🎯</span>
+				<div class="process-content">
+				<strong>Goal</strong>
+				<span class="process-detail">Increase mentee engagement this week</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🧠</span>
+				<div class="process-content">
+				<strong>Memory</strong>
+				<span class="process-detail">Recall last interactions, goals, tone prefs</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🛠️</span>
+				<div class="process-content">
+				<strong>Tools</strong>
+				<span class="process-detail">Fetch activity logs, templates, availability</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🧩</span>
+				<div class="process-content">
+				<strong>Plan</strong>
+				<span class="process-detail">Choose nudge type, channel, timing</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">✅</span>
+				<div class="process-content">
+				<strong>Evaluate</strong>
+				<span class="process-detail">Check tone, policy, and duplicates</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">✉️</span>
+				<div class="process-content">
+				<strong>Act</strong>
+				<span class="process-detail">Send the nudge and log outcome</span>
+				</div>
+			</div>
+			</div>
+
+			<div class="use-case-benefits">
+			<h4 class="benefits-title">Key Benefits</h4>
+			<div class="benefit-item fragment"><span class="benefit-icon">📬</span><span>Timely, personalised messages</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">🔄</span><span>Continuous improvement via feedback</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">🛡️</span><span>On-brand and policy-compliant</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">⏱️</span><span>Reduced manual admin effort</span></div>
+			</div>
+		</div>
+		</section>
+		<section class="use-case-compact">
+		<h3>Use Case: Program Health Insights (Agentic)</h3>
+		<p class="subtitle-compact">Admins get actionable summaries and next-best-actions</p>
+
+		<div class="use-case-grid">
+			<div class="use-case-process">
+			<div class="process-item fragment">
+				<span class="process-icon">📥</span>
+				<div class="process-content">
+				<strong>Ingest</strong>
+				<span class="process-detail">Surveys, session notes, activity metrics</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🔎</span>
+				<div class="process-content">
+				<strong>Retrieve</strong>
+				<span class="process-detail">Surface patterns, common blockers</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🧠</span>
+				<div class="process-content">
+				<strong>Summarise</strong>
+				<span class="process-detail">Generate program health snapshot</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🧭</span>
+				<div class="process-content">
+				<strong>Plan</strong>
+				<span class="process-detail">Propose next-best-actions & owners</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">✅</span>
+				<div class="process-content">
+				<strong>Evaluate</strong>
+				<span class="process-detail">Check for policy & data sensitivity</span>
+				</div>
+			</div>
+			</div>
+
+			<div class="use-case-benefits">
+			<h4 class="benefits-title">Key Benefits</h4>
+			<div class="benefit-item fragment"><span class="benefit-icon">📊</span><span>Clear, grounded summaries</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">🎯</span><span>Prioritised recommendations</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">🔁</span><span>Closes the loop with follow-ups</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">🔒</span><span>Respectful of privacy & governance</span></div>
+			</div>
+		</div>
+		</section>
+		<section class="use-case-compact">
+		<h3>Use Case: Auto-Scheduler (Agentic)</h3>
+		<p class="subtitle-compact">Reducing back-and-forth to get sessions booked</p>
+
+		<div class="use-case-grid">
+			<div class="use-case-process">
+			<div class="process-item fragment">
+				<span class="process-icon">🎯</span>
+				<div class="process-content">
+				<strong>Goal</strong>
+				<span class="process-detail">Schedule next mentoring session</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🛠️</span>
+				<div class="process-content">
+				<strong>Tools</strong>
+				<span class="process-detail">Calendar, email, availability APIs</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">🧭</span>
+				<div class="process-content">
+				<strong>Plan</strong>
+				<span class="process-detail">Propose slots, handle constraints/timezones</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">✅</span>
+				<div class="process-content">
+				<strong>Evaluate</strong>
+				<span class="process-detail">Conflict checks, reschedule rules</span>
+				</div>
+			</div>
+			<div class="process-item fragment">
+				<span class="process-icon">📨</span>
+				<div class="process-content">
+				<strong>Act</strong>
+				<span class="process-detail">Send invites and reminders</span>
+				</div>
+			</div>
+			</div>
+
+			<div class="use-case-benefits">
+			<h4 class="benefits-title">Key Benefits</h4>
+			<div class="benefit-item fragment"><span class="benefit-icon">⏳</span><span>Less admin coordination</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">📆</span><span>Faster time-to-meeting</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">🙂</span><span>Better participant experience</span></div>
+			<div class="benefit-item fragment"><span class="benefit-icon">🧠</span><span>Learns preferred times over time</span></div>
+			</div>
+		</div>
+		</section>
+		</section>
+
+			<!-- Act 3: Building Agentic -->
+			 <section>
+			<section class="section-divider" id="act-3-building-agentic">
+				<div class="section-number">3</div>
+				<div class="section-content">
+					<h1 class="section-title">Building Agentic</h1>
+					<p class="section-subtitle">From Theory to Implementation</p>
+				</div>
+			</section>
+			<!-- Act 3 - Experiment intro -->
+				<section id="agentic-experiment-intro">
+				<h3>Our experiment</h3>
+				<ul>
+					<li class="fragment">We've built a minimal agent loop demo for MentorLoop</li>
+					<li class="fragment">Runs in both <em>TypeScript</em> and <em>Python</em> so everyone can follow along</li>
+					<li class="fragment">Uses fake MentorLoop datasets - users, pairings, checkins, tips</li>
+					<li class="fragment">Shows the loop in action: think → decide → act → reflect</li>
+					<li class="fragment">We'll try it live, swap providers and chain tools together</li>
+				</ul>
+				</section>
+
+				<!-- Act 3 - Hello Agent Loop -->
+				<section id="hello-agent-loop">
+				<h2>Hello Agent Loop</h2>
+				<ul>
+					<li class="fragment">think → decide → act → reflect</li>
+					<li class="fragment">deterministic first then pluggable brain</li>
+					<li class="fragment">works offline with a rules fallback</li>
+				</ul>
+
+				<div class="terminal-window">
+					<div class="terminal-header">
+					<span class="terminal-button close"></span>
+					<span class="terminal-button minimize"></span>
+					<span class="terminal-button maximize"></span>
+					<span class="terminal-title">Hello Agent Loop - examples/agentic-mentorloop-ts</span>
+					</div>
+					<div class="terminal-content">
+					<div class="terminal-block">
+						<span class="cmd-comment"># See the core loop in action - thought, action, observation, reflection</span>
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">npx ts-node src/cli.ts --prompt "please echo mentorloop onboarding nudge"</span>
+					</div>
+					<div class="terminal-block">
+						<span class="cmd-output">{
+				"thought": "Processing: \"please echo mentorloop onboarding nudge\"",
+				"action": "USE:echo:please echo mentorloop onboarding nudge",
+				"observation": "Echo: please echo mentorloop onboarding nudge",
+				"reflection": "looks ok"
+				}</span>
+					</div>
+					</div>
+				</div>
+				</section>
+
+
+				<!-- Act 3 - Tooling demo -->
+				<section id="tooling-demo">
+				<h2>Add one tool</h2>
+				<ul>
+					<li>engagement pulse from csv</li>
+					<li>agent chooses it based on prompt intent</li>
+					<li>returns a list of dormant mentees with days inactive</li>
+				</ul>
+
+				<div class="terminal-window">
+					<div class="terminal-header">
+					<span class="terminal-button close"></span>
+					<span class="terminal-button minimize"></span>
+					<span class="terminal-button maximize"></span>
+					<span class="terminal-title">Tooling demo - examples/agentic-mentorloop-ts</span>
+					</div>
+					<div class="terminal-content">
+					<div class="terminal-block">
+						<span class="cmd-comment"># Agent uses engagement_pulse tool to find dormant mentees</span>
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">npx ts-node src/cli.ts --prompt "which mentees look dormant engagement"</span>
+					</div>
+					<div class="terminal-block">
+						<span class="cmd-output">
+{
+  "thought": "Processing: \"which mentees look dormant engagement\"",
+  "action": "USE:engagement_pulse:list",
+  "observation": {
+    "type": "list",
+    "dormant_count": 3,
+    "mentees": [
+      {
+        "mentee_id": "u004",
+        "first_name": "Emily",
+        "pair_id": "p002",
+        "last_checkin_days": 27
+      },
+      {
+        "mentee_id": "u010",
+        "first_name": "Liam",
+        "pair_id": "p005",
+        "last_checkin_days": 20
+      },
+      {
+        "mentee_id": "u014",
+        "first_name": "Noah",
+        "pair_id": "p007",
+        "last_checkin_days": 18
+      }
+    ]
+  },
+  "reflection": "looks ok"
+}
+
+						</span>
+					</div>
+					</div>
+				</div>
+				</section>
+
+				<!-- Act 3 - RAG demo -->
+				<section id="rag-demo">
+				<h2>Micro rag</h2>
+				<ul>
+					<li>in memory tips index</li>
+					<li>simple cosine similarity</li>
+					<li>use retrieved tips to enrich the nudge</li>
+				</ul>
+
+				<div class="terminal-window">
+					<div class="terminal-header">
+					<span class="terminal-button close"></span>
+					<span class="terminal-button minimize"></span>
+					<span class="terminal-button maximize"></span>
+					<span class="terminal-title">RAG demo - tips - examples/agentic-mentorloop-ts</span>
+					</div>
+					<div class="terminal-content">
+					<div class="terminal-block">
+						<span class="cmd-comment"># Agent retrieves mentor tips for a one sided conversation</span>
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">PROVIDER=ollama MODEL=phi4:latest npx ts-node src/cli.ts --prompt "tip to reduce one sided conversations"</span>
+					</div>
+					<div class="terminal-block">
+						<span class="cmd-output">{
+				"thought": "Processing: \"tip to reduce one sided conversations\"",
+				"action": "USE:mentor_tips",
+				"observation": {
+					"type": "tips",
+					"hits": [
+					{ "id": "t4", "score": 0.42, "text": "Balance one sided conversations by asking open ended questions that encourage the quieter party to share their perspective", "tags": ["one_sided","engagement"] },
+					{ "id": "t9", "score": 0.35, "text": "Revitalise dormant relationships with a simple 'thinking of you' message and one relevant resource or article", "tags": ["dormant"] }
+					]
+				},
+				"reflection": "looks ok"
+				}</span>
+					</div>
+					</div>
+				</div>
+
+				<div class="terminal-window">
+					<div class="terminal-header">
+					<span class="terminal-button close"></span>
+					<span class="terminal-button minimize"></span>
+					<span class="terminal-button maximize"></span>
+					<span class="terminal-title">RAG demo - tips → nudge - examples/agentic-mentorloop-ts</span>
+					</div>
+					<div class="terminal-content">
+					<div class="terminal-block">
+						<span class="cmd-comment"># Chain tips into a contextual nudge draft</span>
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">PROVIDER=ollama MODEL=phi4:latest npx ts-node src/cli.ts --prompt "tip to reduce one sided conversations" --compose</span>
+					</div>
+					<div class="terminal-block">
+						<span class="cmd-output">{
+				"thought": "Processing: \"tip to reduce one sided conversations\"",
+				"action": "USE:compose_nudge",
+				"observation": {
+					"type": "nudge",
+					"subject": "Balancing your next chat",
+					"body": "Hi Emily, I noticed recent chats were a bit one sided - here are a couple of open ended questions you can try to bring your voice in more…"
+				},
+				"reflection": "looks ok"
+				}</span>
+					</div>
+					</div>
+				</div>
+				</section>
+
+
+				<!-- Act 3 - Provider swap -->
+				<section id="provider-swap">
+				<h2>Provider swap</h2>
+				<ul>
+					<li>configure provider and model via env and flags</li>
+					<li>openai or ollama under one interface</li>
+					<li>graceful fallback when keys or models are missing</li>
+				</ul>
+				</section>
+
+				<section id="provider-swap-live">
+				<div class="terminal-window">
+					<div class="terminal-header">
+					<span class="terminal-button close"></span>
+					<span class="terminal-button minimize"></span>
+					<span class="terminal-button maximize"></span>
+					<span class="terminal-title">Ollama live - examples/agentic-mentorloop-ts</span>
+					</div>
+					<div class="terminal-content">
+					<div class="terminal-block">
+						<span class="cmd-comment"># Pull a local model once then run tips with ollama</span>
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">ollama pull llama3.1:8b</span>
+					</div>
+					<div class="terminal-block">
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">PROVIDER=ollama MODEL=llama3.1:8b npx ts-node src/cli.ts --prompt "tip to reduce one sided conversations"</span>
+					</div>
+					</div>
+				</div>
+
+				<div class="terminal-window">
+					<div class="terminal-header">
+					<span class="terminal-button close"></span>
+					<span class="terminal-button minimize"></span>
+					<span class="terminal-button maximize"></span>
+					<span class="terminal-title">OpenAI live</span>
+					</div>
+					<div class="terminal-content">
+					<div class="terminal-block">
+						<span class="cmd-comment"># Switch to OpenAI with a key and model name</span>
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">export OPENAI_API_KEY=sk-***</span>
+					</div>
+					<div class="terminal-block">
+						<span class="cmd-prompt">$</span>
+						<span class="cmd-command">PROVIDER=openai MODEL=gpt-4o-mini npx ts-node src/cli.ts --prompt "which mentees look dormant engagement"</span>
+					</div>
+					</div>
+				</div>
+				</section>
+
+
+				<section id="frameworks-overview">
+				<h2>Agentic Frameworks</h2>
+				<p class="subtitle-compact">How devs bring loops to life in code</p>
+				</section>
+				<section id="python-vs-js">
+				<h3>Python vs JS/TS</h3>
+				<div class="feature-grid-2">
+					<div class="feature-card fragment">
+					<h4>🐍 Python</h4>
+					<p>Most agentic frameworks were born here (LangChain, Autogen, Haystack)</p>
+					<p>Fastest place for new research + bleeding edge features</p>
+					<div class="feature-card-footer">Great for prototyping · Research heavy</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>⚡ JavaScript / TypeScript</h4>
+					<p>LangChain.js and LlamaIndex TS are now production ready</p>
+					<p>Vercel AI SDK + lightweight OSS make it natural for web devs</p>
+					<div class="feature-card-footer">Best fit for MentorLoop stack · Frontend friendly</div>
+					</div>
+				</div>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Takeaway</span>
+					<p class="smallest">Python leads research · JS/TS is catching up fast for production apps</p>
+				</div>
+				</section>
+				<section id="frameworks-core">
+				<h3>Established Frameworks</h3>
+				<div class="feature-grid-3">
+					<div class="feature-card fragment">
+					<h4>🔗 LangChain.js / LangGraph</h4>
+					<p>Rich ecosystem for chaining tools, memory and planning</p>
+					<div class="feature-card-footer">
+						<a href="https://js.langchain.com" target="_blank">js.langchain.com</a>
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>📚 LlamaIndex TS</h4>
+					<p>Strong focus on RAG and data connectors · simple to plug into JS apps</p>
+					<div class="feature-card-footer">
+						<a href="https://ts.llamaindex.ai" target="_blank">ts.llamaindex.ai</a>
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🟦 Semantic Kernel</h4>
+					<p>Microsoft backed · skills, planners and memory APIs · Azure friendly</p>
+					<div class="feature-card-footer">
+						<a href="https://github.com/microsoft/semantic-kernel" target="_blank">github.com/microsoft/semantic-kernel</a>
+					</div>
+					</div>
+				</div>
+				</section>
+
+				<section id="frameworks-emerging">
+				<h3>Emerging & Protocols</h3>
+				<div class="feature-grid-3">
+					<div class="feature-card fragment">
+					<h4>🤖 Autogen</h4>
+					<p>Multi-agent orchestration · collab workflows · Python first, JS bindings coming</p>
+					<div class="feature-card-footer">
+						<a href="https://github.com/microsoft/autogen" target="_blank">github.com/microsoft/autogen</a>
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🛠️ Haystack</h4>
+					<p>Focus on search + RAG pipelines · early JS wrappers</p>
+					<div class="feature-card-footer">
+						<a href="https://haystack.deepset.ai" target="_blank">haystack.deepset.ai</a>
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🌐 MCP (Model Context Protocol)</h4>
+					<p>Standard for exposing tools to agents · used in Claude + VSCode</p>
+					<div class="feature-card-footer">
+						<a href="https://modelcontextprotocol.io" target="_blank">modelcontextprotocol.io</a>
+					</div>
+					</div>
+				</div>
+				</section>
+
+				<section id="frameworks-light">
+				<h3>Lightweight JS-native</h3>
+				<div class="feature-grid-3">
+					<div class="feature-card fragment">
+					<h4>⚡ Vercel AI SDK</h4>
+					<p>Next.js / React friendly · fast way to ship AI features</p>
+					<div class="feature-card-footer">
+						<a href="https://sdk.vercel.ai" target="_blank">sdk.vercel.ai</a>
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🧪 Superagent / AgentGPT</h4>
+					<p>Experimental OSS · agent loops in JS · fun but not prod ready</p>
+					<div class="feature-card-footer">
+						<a href="https://github.com/homanp/superagent" target="_blank">superagent</a> · 
+						<a href="https://agentgpt.reworkd.ai" target="_blank">agentgpt.reworkd.ai</a>
+					</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>💡 ai-jsx</h4>
+					<p>Agentic components embedded directly in JSX · experimental</p>
+					<div class="feature-card-footer">
+						<a href="https://ai-jsx.com" target="_blank">ai-jsx.com</a>
+					</div>
+					</div>
+				</div>
+				</section>
+
+				<!-- Act 3 - MCP and frameworks -->
+				<section id="mcp-frameworks">
+				<h2>MCP and frameworks</h2>
+				<ul>
+					<li>map loop pieces to langchain js and langgraph</li>
+					<li>tool calls → tools and executors</li>
+					<li>controller → nodes and edges</li>
+					<li>rag helper → retrievers and vector stores</li>
+					<li>evaluation → callbacks and run evaluators</li>
+				</ul>
+				</section>
+
+				<!-- Act 3 - Build vs use frameworks -->
+				<section id="build-vs-frameworks">
+				<h2>Build your own or use a framework</h2>
+				<ul>
+					<li>small agents and local demos → custom loop</li>
+					<li>complex workflows and concurrency → framework</li>
+					<li>observability retries and tracing → framework</li>
+					<li>shared tools and memory across teams → framework</li>
+				</ul>
+				</section>
+
+			</section>
+
+			<!-- Act 4: Applying at MentorLoop -->
+			<section class="section-divider" id="act-4-applying-at-mentorloop">
+				<div class="section-number">4</div>
+				<div class="section-content">
+					<h1 class="section-title">Applying at MentorLoop</h1>
+					<p class="section-subtitle">Real-World Use Cases</p>
+				</div>
+			</section>
+
+			<!-- Act 5: Road to Production -->
+			<section>
+			<section class="section-divider" id="act-5-road-to-production">
+				<div class="section-number">5</div>
+				<div class="section-content">
+					<h1 class="section-title">Road to Production</h1>
+					<p class="section-subtitle">Deployment and Best Practices</p>
+				</div>
+			</section>
+				<section>
+				<h3>Hosting Options</h3>
+				<div class="feature-grid-3">
+					<div class="feature-card fragment">
+					<h4>☁️ Cloud</h4>
+					<p>OpenAI, Anthropic, Bedrock</p>
+					<div class="feature-card-footer">Fast to start · External data flow</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🖥️ Self-hosted</h4>
+					<p>Ollama, vLLM, LM Studio on AWS</p>
+					<div class="feature-card-footer">MentorLoop fit · Own the data</div>
+					</div>
+					<div class="feature-card fragment">
+					<h4>🔀 Hybrid</h4>
+					<p>Local inference with cloud fallback</p>
+					<div class="feature-card-footer">Balance cost · Reliability</div>
+					</div>
+				</div>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Principle</span>
+					<p class="smaller">Self-hosted, MentorLoop-owned database</p>
+				</div>
+				</section>
+				<section>
+				<h3>Costs & Budgeting</h3>
+				<ul class="smaller">
+					<li class="fragment">💸 Cloud APIs can add up fast (per token billing)</li>
+					<li class="fragment">🖥️ Self-hosted OSS = infra costs (EC2, GPUs, storage)</li>
+					<li class="fragment">⚖️ Hybrid model → cloud for spikes, local for steady use</li>
+					<li class="fragment">📊 Budgeting tip: track cost per program, per nudge</li>
+				</ul>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">MentorLoop</span>
+					<p class="smaller">Balance innovation with cost visibility → no surprise AWS bills</p>
+				</div>
+				</section>
+				<section>
+				<h3>Governance</h3>
+				<ul class="icon-list">
+					<li class="fragment">🔒 Privacy by design - keep mentoring data in-house</li>
+					<li class="fragment">👥 Opt-in use - mentors and mentees always in control</li>
+					<li class="fragment">🔍 Transparency - explain clearly when AI is active</li>
+					<li class="fragment">🤝 Human-first - AI supports, not replaces relationships</li>
+				</ul>
+				</section>
+
+				<section>
+				<h3>Analytics & Instrumenting</h3>
+				<ul class="icon-list">
+					<li class="fragment">📊 Log agent decisions and outcomes</li>
+					<li class="fragment">📬 Engagement metrics → nudges opened, replies sent</li>
+					<li class="fragment">👀 Visibility into usage and meeting activity</li>
+					<li class="fragment">🔁 Feedback loop → refine prompts and data</li>
+				</ul>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">MentorLoop</span>
+					<p class="smaller">From raw logs → program health insights for admins</p>
+				</div>
+				</section>
+
+				<section>
+				<h3>Security & Guardrails</h3>
+				<ul class="icon-list">
+					<li class="fragment">🚫 Prevent spam or repeated nudges</li>
+					<li class="fragment">🧠 Guardrails for tone, language and fairness</li>
+					<li class="fragment">🛡️ Role-based permissions for agent actions</li>
+					<li class="fragment">✅ Users can trust and report issues easily</li>
+				</ul>
+				<div class="enterprise-bottom-line fragment">
+					<span class="enterprise-badge-inline">Example</span>
+					<p class="smaller">EDNA can't bulk email 200 mentees at once</p>
+				</div>
+				</section>
+
+				<section>
+				<h3>Next Steps</h3>
+				<ul class="icon-list">
+					<li class="fragment">✅ Ready to take agents into production with trust</li>
+					<li class="fragment">🧰 Afternoon → sketch MentorLoop POCs with guardrails</li>
+				</ul>
+				</section>
+
+
+			</section>
+
+			<!-- Thank you slide -->
+			<section class="center-vertical">
+				<div class="sixpivot-header-mini">
+					<p class="sixpivot-header-title-mini">
+						<span class="sixpivot-brand">⬢</span> Thank you
+					</p>
+				</div>
+				<h2>Questions?</h2>
+				<p><a href="https://sixpivot.com.au">sixpivot.com.au</a></p>
+			</section>
 		</div>
 	</div>
 
@@ -79,21 +1304,21 @@
 			chart: {
 				defaults: {
 					global: {
-						title: { fontColor: "#FFF" },
+						title: { fontColor: "#e6edf3" },
 						legend: {
-							labels: { fontColor: "#FFF" },
+							labels: { fontColor: "#e6edf3" },
 						},
 					},
 					scale: {
-						scaleLabel: { fontColor: "#FFF" },
-						gridLines: { color: "#FFF", zeroLineColor: "#FFF" },
-						ticks: { fontColor: "#FFF" },
+						scaleLabel: { fontColor: "#e6edf3" },
+						gridLines: { color: "#2a3641", zeroLineColor: "#2a3641" },
+						ticks: { fontColor: "#e6edf3" },
 					}
 				},
-				line: { borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"], "borderDash": [[5, 10], [0, 0]] },
-				bar: { backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"] },
-				pie: { backgroundColor: [["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]] },
-				radar: { borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"] },
+				line: { borderColor: ["#61a462", "#73b17a", "#90bf96"], "borderDash": [[5, 10], [0, 0]] },
+				bar: { backgroundColor: ["#61a462", "#73b17a", "#90bf96"] },
+				pie: { backgroundColor: [["#61a462", "#73b17a", "#90bf96", "#4e8950", "#3f6d40"]] },
+				radar: { borderColor: ["#61a462", "#73b17a", "#90bf96"] },
 			},
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart, RevealChalkboard, RevealMermaid]
 		});

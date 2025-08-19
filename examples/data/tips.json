@@ -1,0 +1,62 @@
+[
+  {
+    "tip_id": "t1",
+    "situation": "dormant",
+    "text": "If a mentee has not checked in for 14 days, send a gentle reminder emphasising that there's no pressure and you're here when they're ready."
+  },
+  {
+    "tip_id": "t2",
+    "situation": "dormant",
+    "text": "Re-engage dormant pairs by suggesting a specific, low-commitment activity like sharing one win from the past fortnight."
+  },
+  {
+    "tip_id": "t3",
+    "situation": "celebrate_wins",
+    "text": "Celebrate small wins by acknowledging specific achievements and linking them to broader career goals."
+  },
+  {
+    "tip_id": "t4",
+    "situation": "one_sided",
+    "text": "Balance one-sided conversations by asking open-ended questions that encourage the quieter party to share their perspective."
+  },
+  {
+    "tip_id": "t5",
+    "situation": "one_sided",
+    "text": "If conversations feel mentor-heavy, try the 70-30 rule where mentees speak 70% of the time during your sessions."
+  },
+  {
+    "tip_id": "t6",
+    "situation": "blocked_goal",
+    "text": "When goals are blocked, help break them into smaller milestones that can build momentum despite obstacles."
+  },
+  {
+    "tip_id": "t7",
+    "situation": "blocked_goal",
+    "text": "Reframe blocked goals as learning opportunities by exploring what insights have emerged from the challenge."
+  },
+  {
+    "tip_id": "t8",
+    "situation": "celebrate_wins",
+    "text": "Recognise progress by comparing current state to three months ago, highlighting specific growth areas."
+  },
+  {
+    "tip_id": "t9",
+    "situation": "dormant",
+    "text": "Revitalise dormant relationships with a simple 'thinking of you' message and one relevant resource or article."
+  },
+  {
+    "tip_id": "t10",
+    "situation": "one_sided",
+    "text": "Address conversation imbalance by explicitly inviting input: 'I'd love to hear your thoughts on this.'"
+  },
+  {
+    "tip_id": "t11",
+    "situation": "blocked_goal",
+    "text": "Navigate blocked goals by exploring alternative paths that achieve similar learning outcomes."
+  },
+  {
+    "tip_id": "t12",
+    "situation": "celebrate_wins",
+    "text": "Amplify achievements by encouraging mentees to share their wins with their broader team or network."
+  }
+]

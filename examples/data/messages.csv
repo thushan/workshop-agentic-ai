@@ -1,0 +1,201 @@
+pair_id,timestamp,author_role,channel,text
+p004,2023-04-01T10:53:00Z,mentee,inbox,The team loved the new approach you suggested!
+p006,2023-04-02T06:34:00Z,mentor,email,Let's schedule a call to discuss your career goals.
+p001,2023-04-02T12:17:00Z,mentee,inbox,Could we discuss career transition strategies?
+p009,2023-04-02T17:45:00Z,mentor,inbox,I had a similar experience early in my career.
+p004,2023-04-02T19:26:00Z,mentee,email,Finding it hard to maintain work-life balance.
+p006,2023-04-03T03:24:00Z,mentee,email,Could we discuss career transition strategies?
+p007,2023-04-03T07:07:00Z,mentor,inbox,Great to hear about your progress on the project!
+p009,2023-04-03T10:25:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p001,2023-04-03T14:00:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p002,2023-04-04T09:21:00Z,mentee,inbox,Made good progress on the presentation this week.
+p008,2023-04-04T10:00:00Z,mentee,inbox,Could we discuss career transition strategies?
+p007,2023-04-04T10:33:00Z,mentor,email,I had a similar experience early in my career.
+p010,2023-04-04T12:16:00Z,mentee,inbox,Applied for the role we discussed last time.
+p010,2023-04-04T15:13:00Z,mentor,inbox,I've attached some resources that might help.
+p009,2023-04-05T13:42:00Z,mentor,email,Have you considered approaching it from this angle?
+p005,2023-04-06T02:16:00Z,mentee,email,Would love your thoughts on this situation.
+p004,2023-04-06T04:47:00Z,mentee,inbox,Could we discuss career transition strategies?
+p009,2023-04-06T11:11:00Z,mentee,inbox,The team loved the new approach you suggested!
+p010,2023-04-06T14:23:00Z,mentor,inbox,"Your approach sounds solid, keep going!"
+p005,2023-04-06T19:49:00Z,mentor,inbox,"Your approach sounds solid, keep going!"
+p008,2023-04-07T00:05:00Z,mentee,email,Made good progress on the presentation this week.
+p001,2023-04-07T16:20:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p003,2023-04-07T16:30:00Z,mentee,inbox,The team loved the new approach you suggested!
+p002,2023-04-08T07:50:00Z,mentor,email,Have you considered approaching it from this angle?
+p008,2023-04-08T08:01:00Z,mentee,inbox,Could we discuss career transition strategies?
+p003,2023-04-08T18:33:00Z,mentor,email,Have you considered approaching it from this angle?
+p002,2023-04-10T13:55:00Z,mentee,email,Applied for the role we discussed last time.
+p006,2023-04-10T19:57:00Z,mentee,email,I've been thinking about your last suggestion.
+p002,2023-04-11T00:23:00Z,mentor,inbox,I've attached some resources that might help.
+p004,2023-04-11T03:26:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p008,2023-04-11T11:44:00Z,mentor,inbox,I had a similar experience early in my career.
+p008,2023-04-11T14:47:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p003,2023-04-11T18:44:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p010,2023-04-12T04:26:00Z,mentor,email,Let's schedule a call to discuss your career goals.
+p004,2023-04-12T13:46:00Z,mentor,inbox,I've attached some resources that might help.
+p006,2023-04-12T19:33:00Z,mentor,email,"Your approach sounds solid, keep going!"
+p010,2023-04-13T00:07:00Z,mentee,inbox,Completed the course you recommended!
+p003,2023-04-13T02:28:00Z,mentee,email,Could we discuss career transition strategies?
+p003,2023-04-13T12:34:00Z,mentee,inbox,The team loved the new approach you suggested!
+p001,2023-04-13T21:54:00Z,mentee,inbox,Would love your thoughts on this situation.
+p006,2023-04-13T23:16:00Z,mentee,email,Made good progress on the presentation this week.
+p004,2023-04-14T00:10:00Z,mentor,email,"Your approach sounds solid, keep going!"
+p005,2023-04-14T02:19:00Z,mentor,inbox,How are you finding the new role?
+p010,2023-04-14T02:54:00Z,mentor,inbox,"Your approach sounds solid, keep going!"
+p003,2023-04-14T02:56:00Z,mentor,inbox,Great to hear about your progress on the project!
+p008,2023-04-14T11:31:00Z,mentee,inbox,Made good progress on the presentation this week.
+p005,2023-04-15T01:23:00Z,mentee,inbox,Applied for the role we discussed last time.
+p005,2023-04-15T07:57:00Z,mentor,inbox,What challenges are you facing this week?
+p010,2023-04-15T10:31:00Z,mentee,inbox,Could we discuss career transition strategies?
+p007,2023-04-15T12:38:00Z,mentee,inbox,The team loved the new approach you suggested!
+p002,2023-04-16T00:08:00Z,mentor,email,How are you finding the new role?
+p001,2023-04-16T21:38:00Z,mentee,inbox,Could we discuss career transition strategies?
+p001,2023-04-17T14:16:00Z,mentor,inbox,"Your approach sounds solid, keep going!"
+p003,2023-04-18T02:45:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p002,2023-04-18T06:29:00Z,mentee,email,Could we discuss career transition strategies?
+p003,2023-04-18T08:11:00Z,mentor,inbox,I've attached some resources that might help.
+p007,2023-04-18T11:47:00Z,mentor,inbox,What challenges are you facing this week?
+p006,2023-04-18T11:52:00Z,mentee,email,Applied for the role we discussed last time.
+p004,2023-04-18T21:21:00Z,mentor,inbox,I've attached some resources that might help.
+p008,2023-04-19T23:02:00Z,mentee,email,Would love your thoughts on this situation.
+p001,2023-04-20T08:51:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p005,2023-04-20T09:24:00Z,mentor,inbox,How are you finding the new role?
+p006,2023-04-20T14:41:00Z,mentee,inbox,I've been thinking about your last suggestion.
+p007,2023-04-20T21:48:00Z,mentor,email,I had a similar experience early in my career.
+p004,2023-04-21T23:11:00Z,mentor,inbox,Remember to celebrate these small wins!
+p004,2023-04-22T06:23:00Z,mentor,inbox,Let's schedule a call to discuss your career goals.
+p006,2023-04-22T19:45:00Z,mentor,inbox,Great to hear about your progress on the project!
+p010,2023-04-22T20:16:00Z,mentee,email,"Thanks for the feedback, really helpful!"
+p010,2023-04-23T01:41:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p008,2023-04-23T01:56:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p007,2023-04-23T07:56:00Z,mentee,inbox,The team loved the new approach you suggested!
+p002,2023-04-23T11:04:00Z,mentee,inbox,Would love your thoughts on this situation.
+p010,2023-04-24T04:36:00Z,mentee,inbox,The team loved the new approach you suggested!
+p006,2023-04-24T06:12:00Z,mentee,email,Would love your thoughts on this situation.
+p002,2023-04-24T06:30:00Z,mentor,inbox,How are you finding the new role?
+p006,2023-04-24T14:56:00Z,mentee,inbox,Completed the course you recommended!
+p008,2023-04-24T17:19:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p003,2023-04-24T22:15:00Z,mentor,inbox,I had a similar experience early in my career.
+p006,2023-04-25T16:49:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p008,2023-04-26T08:49:00Z,mentee,inbox,Completed the course you recommended!
+p007,2023-04-26T10:41:00Z,mentor,inbox,Great to hear about your progress on the project!
+p008,2023-04-26T14:22:00Z,mentee,email,Applied for the role we discussed last time.
+p001,2023-04-26T15:14:00Z,mentee,inbox,Applied for the role we discussed last time.
+p002,2023-04-27T02:20:00Z,mentee,inbox,Made good progress on the presentation this week.
+p008,2023-04-27T05:00:00Z,mentee,inbox,Completed the course you recommended!
+p005,2023-04-27T10:16:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p003,2023-04-27T11:01:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p006,2023-04-27T23:55:00Z,mentor,inbox,I've attached some resources that might help.
+p001,2023-04-28T13:56:00Z,mentee,inbox,Completed the course you recommended!
+p003,2023-04-28T17:42:00Z,mentor,inbox,Let's review your goals for next quarter.
+p004,2023-04-28T18:45:00Z,mentee,email,I'm struggling with prioritisation at work.
+p009,2023-04-28T23:05:00Z,mentee,email,I'm struggling with prioritisation at work.
+p002,2023-04-29T04:41:00Z,mentor,inbox,I've attached some resources that might help.
+p009,2023-04-29T11:36:00Z,mentee,inbox,The team loved the new approach you suggested!
+p003,2023-04-29T12:30:00Z,mentee,inbox,Would love your thoughts on this situation.
+p010,2023-04-30T20:13:00Z,mentor,email,I've attached some resources that might help.
+p009,2023-05-01T03:04:00Z,mentee,email,"Thanks for the feedback, really helpful!"
+p005,2023-05-01T08:27:00Z,mentor,email,Great to hear about your progress on the project!
+p001,2023-05-01T20:11:00Z,mentor,inbox,Let's schedule a call to discuss your career goals.
+p010,2023-05-02T07:24:00Z,mentee,email,Applied for the role we discussed last time.
+p010,2023-05-02T09:44:00Z,mentor,inbox,Remember to celebrate these small wins!
+p010,2023-05-02T10:24:00Z,mentor,inbox,"Your approach sounds solid, keep going!"
+p010,2023-05-02T12:21:00Z,mentee,email,Finding it hard to maintain work-life balance.
+p007,2023-05-02T18:28:00Z,mentee,inbox,Made good progress on the presentation this week.
+p003,2023-05-02T19:54:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p005,2023-05-03T05:53:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p006,2023-05-03T11:44:00Z,mentee,inbox,Would love your thoughts on this situation.
+p002,2023-05-03T17:50:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p005,2023-05-03T20:01:00Z,mentor,email,Let's review your goals for next quarter.
+p003,2023-05-04T05:35:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p007,2023-05-04T10:42:00Z,mentee,inbox,Made good progress on the presentation this week.
+p009,2023-05-05T03:21:00Z,mentee,inbox,Completed the course you recommended!
+p001,2023-05-05T03:39:00Z,mentor,inbox,"Your approach sounds solid, keep going!"
+p005,2023-05-05T03:50:00Z,mentor,email,What challenges are you facing this week?
+p001,2023-05-06T07:52:00Z,mentor,inbox,"Your approach sounds solid, keep going!"
+p001,2023-05-06T09:30:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p005,2023-05-06T10:23:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p004,2023-05-07T08:24:00Z,mentee,inbox,Completed the course you recommended!
+p001,2023-05-07T21:06:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p007,2023-05-08T07:33:00Z,mentor,email,I've attached some resources that might help.
+p007,2023-05-08T10:36:00Z,mentor,inbox,I've attached some resources that might help.
+p004,2023-05-08T15:17:00Z,mentor,email,Let's schedule a call to discuss your career goals.
+p006,2023-05-09T12:22:00Z,mentee,inbox,I've been thinking about your last suggestion.
+p006,2023-05-09T18:01:00Z,mentor,email,"Your approach sounds solid, keep going!"
+p007,2023-05-10T09:41:00Z,mentee,email,I've been thinking about your last suggestion.
+p006,2023-05-11T17:05:00Z,mentor,inbox,Let's review your goals for next quarter.
+p008,2023-05-11T23:10:00Z,mentor,inbox,Great to hear about your progress on the project!
+p005,2023-05-12T09:24:00Z,mentor,inbox,How are you finding the new role?
+p002,2023-05-12T09:33:00Z,mentee,inbox,Could we discuss career transition strategies?
+p007,2023-05-12T10:51:00Z,mentor,inbox,Let's schedule a call to discuss your career goals.
+p010,2023-05-12T22:13:00Z,mentee,email,Would love your thoughts on this situation.
+p006,2023-05-13T00:05:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p002,2023-05-13T09:57:00Z,mentee,inbox,Could we discuss career transition strategies?
+p010,2023-05-13T11:23:00Z,mentee,email,Completed the course you recommended!
+p008,2023-05-13T12:14:00Z,mentor,email,Let's schedule a call to discuss your career goals.
+p004,2023-05-14T02:03:00Z,mentee,inbox,I've been thinking about your last suggestion.
+p004,2023-05-14T03:44:00Z,mentor,inbox,Let's review your goals for next quarter.
+p001,2023-05-14T13:32:00Z,mentee,inbox,I've been thinking about your last suggestion.
+p006,2023-05-14T15:02:00Z,mentor,inbox,How are you finding the new role?
+p009,2023-05-15T01:24:00Z,mentee,email,Finding it hard to maintain work-life balance.
+p008,2023-05-15T04:26:00Z,mentor,inbox,I've attached some resources that might help.
+p010,2023-05-15T18:26:00Z,mentor,inbox,Let's review your goals for next quarter.
+p006,2023-05-15T20:33:00Z,mentee,inbox,Could we discuss career transition strategies?
+p009,2023-05-16T07:44:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p005,2023-05-16T23:45:00Z,mentee,email,Completed the course you recommended!
+p008,2023-05-17T12:40:00Z,mentor,inbox,Let's review your goals for next quarter.
+p005,2023-05-17T13:57:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p003,2023-05-17T14:45:00Z,mentee,inbox,Made good progress on the presentation this week.
+p010,2023-05-17T20:14:00Z,mentor,inbox,I've attached some resources that might help.
+p002,2023-05-17T21:07:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p007,2023-05-18T07:13:00Z,mentee,email,Finding it hard to maintain work-life balance.
+p004,2023-05-18T19:50:00Z,mentee,inbox,I've been thinking about your last suggestion.
+p005,2023-05-18T23:06:00Z,mentor,email,"Your approach sounds solid, keep going!"
+p010,2023-05-19T19:37:00Z,mentee,inbox,Made good progress on the presentation this week.
+p007,2023-05-19T23:47:00Z,mentor,inbox,Let's schedule a call to discuss your career goals.
+p001,2023-05-20T03:06:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p004,2023-05-20T12:30:00Z,mentee,email,"Thanks for the feedback, really helpful!"
+p005,2023-05-20T16:00:00Z,mentee,inbox,Could we discuss career transition strategies?
+p002,2023-05-20T16:10:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p010,2023-05-20T20:24:00Z,mentor,inbox,Great to hear about your progress on the project!
+p004,2023-05-20T23:10:00Z,mentee,inbox,The team loved the new approach you suggested!
+p006,2023-05-21T06:22:00Z,mentee,email,"Thanks for the feedback, really helpful!"
+p010,2023-05-21T06:53:00Z,mentor,email,Let's review your goals for next quarter.
+p009,2023-05-21T10:51:00Z,mentor,inbox,How are you finding the new role?
+p007,2023-05-21T14:20:00Z,mentor,inbox,How are you finding the new role?
+p004,2023-05-21T15:26:00Z,mentor,inbox,Remember to celebrate these small wins!
+p007,2023-05-21T22:05:00Z,mentee,email,I've been thinking about your last suggestion.
+p002,2023-05-22T10:38:00Z,mentor,email,How are you finding the new role?
+p002,2023-05-22T21:06:00Z,mentee,inbox,Completed the course you recommended!
+p005,2023-05-23T23:00:00Z,mentee,inbox,Completed the course you recommended!
+p002,2023-05-24T05:24:00Z,mentee,inbox,Applied for the role we discussed last time.
+p003,2023-05-24T09:15:00Z,mentor,email,I've attached some resources that might help.
+p002,2023-05-24T11:23:00Z,mentee,inbox,Could we discuss career transition strategies?
+p010,2023-05-24T13:36:00Z,mentor,inbox,Have you considered approaching it from this angle?
+p005,2023-05-24T18:20:00Z,mentee,inbox,Applied for the role we discussed last time.
+p010,2023-05-24T20:26:00Z,mentor,inbox,Let's review your goals for next quarter.
+p008,2023-05-24T21:25:00Z,mentee,email,Finding it hard to maintain work-life balance.
+p004,2023-05-25T01:29:00Z,mentee,inbox,Applied for the role we discussed last time.
+p004,2023-05-25T01:51:00Z,mentee,inbox,I'm struggling with prioritisation at work.
+p005,2023-05-25T04:20:00Z,mentor,email,Let's schedule a call to discuss your career goals.
+p008,2023-05-25T11:04:00Z,mentor,email,Let's schedule a call to discuss your career goals.
+p003,2023-05-25T17:27:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p004,2023-05-25T19:54:00Z,mentee,inbox,"Thanks for the feedback, really helpful!"
+p010,2023-05-26T13:33:00Z,mentee,email,Applied for the role we discussed last time.
+p009,2023-05-26T21:33:00Z,mentee,inbox,Applied for the role we discussed last time.
+p007,2023-05-27T04:09:00Z,mentor,email,Remember to celebrate these small wins!
+p007,2023-05-27T06:30:00Z,mentor,email,I had a similar experience early in my career.
+p010,2023-05-27T07:33:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p004,2023-05-27T09:57:00Z,mentor,email,I had a similar experience early in my career.
+p006,2023-05-28T14:20:00Z,mentor,inbox,Let's schedule a call to discuss your career goals.
+p010,2023-05-28T20:51:00Z,mentor,inbox,What challenges are you facing this week?
+p010,2023-05-29T03:11:00Z,mentor,inbox,Let's schedule a call to discuss your career goals.
+p002,2023-05-29T05:14:00Z,mentor,inbox,I've attached some resources that might help.
+p001,2023-05-29T14:22:00Z,mentee,email,Applied for the role we discussed last time.
+p010,2023-05-29T18:50:00Z,mentee,inbox,Finding it hard to maintain work-life balance.
+p009,2023-05-30T05:13:00Z,mentee,email,"Thanks for the feedback, really helpful!"
+p006,2023-05-30T05:44:00Z,mentee,inbox,Made good progress on the presentation this week.
+p008,2023-05-31T00:26:00Z,mentee,email,I'm struggling with prioritisation at work.
+p005,2023-05-31T09:18:00Z,mentee,inbox,I've been thinking about your last suggestion.
+p008,2023-05-31T18:31:00Z,mentee,inbox,Completed the course you recommended!

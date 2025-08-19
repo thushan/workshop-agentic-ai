@@ -1,26 +1,26 @@
-.highlight-1,
-.highlight-yellow {
-    color: rgb(255, 170, 0);
+.reveal .highlight-1,
+.reveal .highlight-yellow {
+    color: rgb(255, 170, 0) !important;
 }
-.highlight-2,
-.highlight-blue {
-    color: rgb(0, 170, 255);
+.reveal .highlight-2,
+.reveal .highlight-blue {
+    color: rgb(0, 170, 255) !important;
 }
-.highlight-3,
-.highlight-purple {
-    color: rgb(128, 85, 196);
+.reveal .highlight-3,
+.reveal .highlight-purple {
+    color: rgb(128, 85, 196) !important;
 }
-.highlight-4,
-.highlight-pink {
-    color: rgb(255, 0, 136);
+.reveal .highlight-4,
+.reveal .highlight-pink {
+    color: rgb(255, 0, 136) !important;
 }
-.highlight-5,
-.highlight-orange {
-    color: rgb(249, 145, 87);
+.reveal .highlight-5,
+.reveal .highlight-orange {
+    color: rgb(249, 145, 87) !important;
 }
-.highlight-6,
-.highlight-green {
-    color: #2fd15a;
+.reveal .highlight-6,
+.reveal .highlight-green {
+    color: #2fd15a !important;
 }
 .font-xlarge {
     font-size: x-large

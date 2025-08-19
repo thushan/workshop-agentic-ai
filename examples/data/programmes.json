@@ -1,0 +1,20 @@
+[
+  {
+    "programme_id": "prog001",
+    "name": "Leadership Excellence Programme",
+    "cadence_days": 7,
+    "success_markers": ["regular_checkins", "goal_progress", "engagement_quality"]
+  },
+  {
+    "programme_id": "prog002",
+    "name": "Career Transition Support",
+    "cadence_days": 14,
+    "success_markers": ["skill_development", "network_growth", "confidence_building"]
+  },
+  {
+    "programme_id": "prog003",
+    "name": "Technical Mentorship Track",
+    "cadence_days": 10,
+    "success_markers": ["technical_growth", "project_completion", "knowledge_sharing"]
+  }
+]
